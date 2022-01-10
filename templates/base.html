@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <a href="{{ url_for('predictFromCSV') }}" class="csv nav-link"
+        >Predict using Batch file</a
+      >
+      <a href="{{ url_for('predictFromValue') }}" class="values nav-link"
+        >Predict using values</a
+      >
+      <form action="#" method="post" class="retrain-form">
+        <button class="train-btn" type="submit">Retrain the model</button>
+      </form>
+    </nav>
+    <header class="header">
+      <h1>Concrete Compressive Strength Prediction</h1>
+    </header>
+    {% block content %} {% endblock%}
+  </body>
+</html>

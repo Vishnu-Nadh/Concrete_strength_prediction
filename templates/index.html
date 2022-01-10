@@ -1,0 +1,75 @@
+{% extends "base.html" %} {% block content %}
+<main class="main-container">
+  <form action="#" method="post">
+    <div class="cement-div">
+      <input type="number" class="cement" id="cement" name="cement" />
+      <label for="cement">Cement composition (in kg/m3)</label>
+      <div class="error-message">message</div>
+    </div>
+    <div class="blast_furnace_slag-div">
+      <input
+        type="number"
+        class="blast_furnace_slag"
+        id="blast_furnace_slag"
+        name="blast_furnace_slag"
+      />
+      <label for="blast_furnace_slag"
+        >Blast furnace slag composition (in kg/m3)</label
+      >
+      <div class="error-message">message</div>
+    </div>
+    <div class="fly_ash-div">
+      <input type="number" class="fly_ash" id="fly_ash" name="fly_ash" />
+      <label for="fly_ash">Fly Ash composition (in kg/m3)</label>
+      <div class="error-message">message</div>
+    </div>
+    <div class="water-div">
+      <input type="number" class="water" id="water" name="water" />
+      <label for="water">Water composition (in kg/m3)</label>
+      <div class="error-message">message</div>
+    </div>
+    <div class="super_plasticizer-div">
+      <input
+        type="number"
+        class="super_plasticizer"
+        id="super_plasticizer"
+        name="super_plasticizer"
+      />
+      <label for="super_plasticizer"
+        >Superplasticizer composition (in kg/m3)</label
+      >
+      <div class="error-message">message</div>
+    </div>
+    <div class="coarse_aggregate-div">
+      <input
+        type="number"
+        class="coarse_aggregate"
+        id="coarse_aggregate"
+        name="coarse_aggregate"
+      />
+      <label for="coarse_aggregate"
+        >Course Aggregate composition (in kg/m3)</label
+      >
+      <div class="error-message">message</div>
+    </div>
+
+    <div class="fine_aggregate-div">
+      <input
+        type="number"
+        class="fine_aggregate"
+        id="fine_aggregate"
+        name="fine_aggregate"
+      />
+      <label for="fine_aggregate">Fine Aggregate composition (in kg/m3)</label>
+      <div class="error-message">message</div>
+    </div>
+    <div class="Age-div">
+      <input type="number" class="Age" id="Age" name="Age" />
+      <label for="Age">Age of Concrete mix (in days)</label>
+      <div class="error-message">message</div>
+    </div>
+    <submit class="form-btn">Predict</submit>
+  </form>
+  <div class="show-result">Result in Mpa</div>
+</main>
+{% endblock %}
