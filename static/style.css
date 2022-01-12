@@ -105,12 +105,16 @@ body {
 h1 {
   /* position: fixed; */
   margin: 0 auto;
+  padding: 0.6rem;
   text-align: center;
   font-size: 4.2rem;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.05rem;
-  color: #364fc7;
+  /* color: #364fc7; */
+  background: -webkit-linear-gradient(#4c6ef5, #364fc7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* index.html */
@@ -127,8 +131,6 @@ h1 {
 }
 
 .form-values {
-  /* margin-top: 5.4rem; */
-
   justify-content: center;
   margin: 0 auto;
   width: 90%;
@@ -199,7 +201,13 @@ h1 {
 .show-result {
   display: flex;
   width: 50%;
-  margin: 2rem auto;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 2rem;
   justify-content: center;
-  height: 20rem;
+  height: 5rem;
+  border: 2px solid #fff;
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #343a40;
 }
