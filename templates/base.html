@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../static/style.css" />
   </head>
   <body>
-    <nav class="nav-bar">
+    <nav class="nav-bar sticky">
       <a href="{{ url_for('predictFromCSV') }}" class="csv nav-link"
         >Predict using Batch file</a
       >
@@ -24,7 +24,7 @@
         <button class="train-btn" type="submit">Retrain the model</button>
       </form>
     </nav>
-    <header class="header">
+    <header class="header sticky">
       <h1>Concrete Compressive Strength Prediction</h1>
     </header>
     {% block content %} {% endblock%}

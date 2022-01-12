@@ -7,7 +7,11 @@
 #364fc7
 /*  */
 
-* {
+/* general, base.html */
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,24 +30,26 @@ html {
 }
 
 body {
-  background-color: #f1f3f5;
+  background-color: #fff;
   font-family: "Inter", sans-serif;
   color: #343a40;
   font-size: 1.6rem;
   margin: 0;
+  margin-top: 10.6rem;
 }
 
 .nav-bar {
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
-  margin-bottom: 2rem;
-  height: 7rem;
+  height: 8rem;
   display: flex;
   gap: 3rem;
   justify-content: center;
   align-items: center;
   background-color: #364fc7;
   color: #dbe4ff;
+  z-index: 999;
 }
 
 .retrain-form {
@@ -86,13 +92,114 @@ body {
   color: #fff;
 }
 
+.header {
+  position: fixed;
+  padding: 2rem 0.2rem;
+  width: 100%;
+  top: 8rem;
+  /* margin-bottom: 5.4rem; */
+  z-index: 999;
+  background-color: #fff;
+}
+
 h1 {
+  /* position: fixed; */
   margin: 0 auto;
   text-align: center;
-  font-size: 4.8rem;
+  font-size: 4.2rem;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.05rem;
   color: #364fc7;
-  margin-bottom: 2rem;
+}
+
+/* index.html */
+.main-container {
+  margin-top: 16.4rem;
+  padding-top: 4rem;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.555),
+      rgba(255, 255, 255, 0.219)
+    ),
+    url("images/concrete.jpg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.form-values {
+  /* margin-top: 5.4rem; */
+
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.4rem;
+  column-gap: 4.8rem;
+  /* justify-items: center; */
+  align-items: center;
+}
+
+.form-values div {
+  position: relative;
+  width: 100%;
+}
+
+.input-box {
+  outline: none;
+  border: 2px solid #2d47ca;
+  border-radius: 5px;
+  height: 5rem;
+  width: 95%;
+  padding: 0 1rem;
+  font-size: 2.4rem;
+  color: #2d47ca;
+  background: none;
+  display: inline-block;
+}
+
+.form-label {
+  position: absolute;
+  top: 1.6rem;
+  left: 1rem;
+  font-size: 2rem;
+  color: #2d47ca;
+  cursor: text;
+  transition: all 0.2s;
+}
+
+.input-box:focus ~ .form-label,
+.input-box:not(:placeholder-shown).input-box:not(:focus) ~ .form-label {
+  top: -0.8rem;
+  font-size: 1.6rem;
+  background-color: #f1f3f5;
+  padding: 0 0.3rem;
+}
+.form-btn {
+  grid-column: 1 /-1;
+  align-self: center;
+  justify-self: center;
+  width: auto;
+  height: 4.2rem;
+  font-size: 2.4rem;
+  color: #364fc7;
+  background-color: #f1f3f5;
+  border: 2px solid #2d47ca;
+  border-radius: 3px;
+  padding: 0.6rem 1.2rem;
+}
+
+.form-btn:hover,
+.form-btn:active {
+  background-image: linear-gradient(to right bottom, #4c6ef5, #364fc7);
+  color: #f1f3f5;
+  border: none;
+}
+
+.show-result {
+  display: flex;
+  width: 50%;
+  margin: 2rem auto;
+  justify-content: center;
+  height: 20rem;
 }

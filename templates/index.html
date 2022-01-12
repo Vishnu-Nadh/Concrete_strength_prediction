@@ -1,53 +1,84 @@
 {% extends "base.html" %} {% block content %}
 <main class="main-container">
-  <form action="#" method="post">
+  <form action="/predict_from_values" method="post" class="form-values">
     <div class="cement-div">
-      <input type="number" class="cement" id="cement" name="cement" />
-      <label for="cement">Cement composition (in kg/m3)</label>
+      <input
+        step="0.01"
+        placeholder=" "
+        type="number"
+        class="cement input-box"
+        id="cement"
+        name="cement"
+      />
+      <label class="form-label" for="cement"
+        >Cement composition (in kg/m3)</label
+      >
       <div class="error-message">message</div>
     </div>
     <div class="blast_furnace_slag-div">
       <input
+        step="0.01"
+        placeholder=" "
         type="number"
-        class="blast_furnace_slag"
+        class="blast_furnace_slag input-box"
         id="blast_furnace_slag"
         name="blast_furnace_slag"
       />
-      <label for="blast_furnace_slag"
+      <label class="form-label" for="blast_furnace_slag"
         >Blast furnace slag composition (in kg/m3)</label
       >
       <div class="error-message">message</div>
     </div>
     <div class="fly_ash-div">
-      <input type="number" class="fly_ash" id="fly_ash" name="fly_ash" />
-      <label for="fly_ash">Fly Ash composition (in kg/m3)</label>
+      <input
+        step="0.01"
+        placeholder=" "
+        type="number"
+        class="fly_ash input-box"
+        id="fly_ash"
+        name="fly_ash"
+      />
+      <label class="form-label" for="fly_ash"
+        >Fly Ash composition (in kg/m3)</label
+      >
       <div class="error-message">message</div>
     </div>
     <div class="water-div">
-      <input type="number" class="water" id="water" name="water" />
-      <label for="water">Water composition (in kg/m3)</label>
+      <input
+        step="0.01"
+        placeholder=" "
+        type="number"
+        class="water input-box"
+        id="water"
+        name="water"
+      />
+      <label class="form-label" for="water">Water composition (in kg/m3)</label>
       <div class="error-message">message</div>
     </div>
     <div class="super_plasticizer-div">
       <input
+        step="0.01"
+        placeholder=" "
         type="number"
-        class="super_plasticizer"
+        class="super_plasticizer input-box"
         id="super_plasticizer"
         name="super_plasticizer"
       />
-      <label for="super_plasticizer"
+      <label class="form-label" for="super_plasticizer"
         >Superplasticizer composition (in kg/m3)</label
       >
       <div class="error-message">message</div>
     </div>
     <div class="coarse_aggregate-div">
       <input
+        step="0.01"
+        placeholder=" "
         type="number"
-        class="coarse_aggregate"
+        class="coarse_aggregate input-box"
         id="coarse_aggregate"
         name="coarse_aggregate"
       />
-      <label for="coarse_aggregate"
+      <label class="form-label" for="coarse_aggregate"
         >Course Aggregate composition (in kg/m3)</label
       >
       <div class="error-message">message</div>
@@ -55,20 +86,30 @@
 
     <div class="fine_aggregate-div">
       <input
+        step="0.01"
+        placeholder=" "
         type="number"
-        class="fine_aggregate"
+        class="fine_aggregate input-box"
         id="fine_aggregate"
         name="fine_aggregate"
       />
-      <label for="fine_aggregate">Fine Aggregate composition (in kg/m3)</label>
+      <label class="form-label" for="fine_aggregate"
+        >Fine Aggregate composition (in kg/m3)</label
+      >
       <div class="error-message">message</div>
     </div>
     <div class="Age-div">
-      <input type="number" class="Age" id="Age" name="Age" />
-      <label for="Age">Age of Concrete mix (in days)</label>
+      <input
+        placeholder=" "
+        type="number"
+        class="Age input-box"
+        id="Age"
+        name="Age"
+      />
+      <label class="form-label" for="Age">Age of Concrete mix (in days)</label>
       <div class="error-message">message</div>
     </div>
-    <submit class="form-btn">Predict</submit>
+    <button type="submit" class="form-btn">Predict</button>
   </form>
   <div class="show-result">Result in Mpa</div>
 </main>

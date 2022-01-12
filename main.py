@@ -24,7 +24,7 @@ def home():
 def predictFromValue():
     try:
         if request.method == 'POST':
-            pass
+            return render_template('index.html')
         else:
             return render_template('index.html')
     except exception as e:
