@@ -35,7 +35,8 @@ def predictFromValue():
 def predictFromCSV():
     try:
         if request.method == 'POST':
-            pass
+            return render_template('predictCSV.html')
+            
         else:
             return render_template('predictCSV.html')
     except exception as e:

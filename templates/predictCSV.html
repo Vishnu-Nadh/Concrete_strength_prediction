@@ -1,12 +1,17 @@
 {% extends "base.html" %} {% block content %}
 <main class="main-container">
-  <form action="#" method="post">
-    <label for="csv-file">Choose your csv-file</label>
-    <input type="file" class="csv-file-input" name="csv-file" id="csv-file" />
-    <button type="submit">Predict</button>
+  <form action="#" method="post" class="csv-form">
+    <div class="csv-box">
+      <label for="csv-file">Choose your csv-file</label>
+      <input type="file" class="csv-file-input" name="csv-file" id="csv-file" />
+      <div class="error-message">flash error-message</div>
+    </div>
+    <button type="submit" class="form-btn">Predict</button>
   </form>
   <div class="result-csv">
+    <em>Download your result results from here</em>
     <a href="#">predictions.csv</a>
   </div>
+  <br />
 </main>
 {% endblock %}
