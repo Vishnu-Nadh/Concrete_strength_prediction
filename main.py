@@ -24,7 +24,10 @@ def home():
 def predictFromValue():
     try:
         if request.method == 'POST':
-            return render_template('index.html')
+            data_dict = request.json
+            output = "45 Mpa"
+            return jsonify(output)
+            # return render_template('index.html')
         else:
             return render_template('index.html')
     except exception as e:
@@ -35,8 +38,7 @@ def predictFromValue():
 def predictFromCSV():
     try:
         if request.method == 'POST':
-            return render_template('predictCSV.html')
-            
+            return render_template('predictCSV.html')            
         else:
             return render_template('predictCSV.html')
     except exception as e:
