@@ -377,6 +377,14 @@ textarea {
   background-color: #364fc7;
 }
 
+.csv-error-message {
+  height: 2rem;
+  width: 90%;
+  text-align: center;
+  color: #e74c3c;
+  font-size: 1.6rem;
+  font-style: italic;
+}
 .result-csv {
   width: 45rem;
   margin: 0 auto;

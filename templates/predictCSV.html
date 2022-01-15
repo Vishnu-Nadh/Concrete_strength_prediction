@@ -1,12 +1,12 @@
 {% extends "base.html" %} {% block content %}
 <main class="main-container">
-  <form action="#" method="post" class="csv-form">
+  <form action="/predict_from_csv" method="post" class="csv-form">
     <div class="csv-box">
       <label for="csv-file">Choose your csv-file</label>
       <input type="file" class="csv-file-input" name="csv-file" id="csv-file" />
-      <div class="error-message">flash error-message</div>
+      <div class="csv-error-message"></div>
     </div>
-    <button type="submit" class="form-btn">Predict</button>
+    <button type="submit" class="form-btn" id="csv-btn">Predict</button>
   </form>
   <div class="result-csv">
     <em>Download your result results from here</em>
@@ -14,4 +14,5 @@
   </div>
   <br />
 </main>
+<script src="../static/csvScript.js"></script>
 {% endblock %}

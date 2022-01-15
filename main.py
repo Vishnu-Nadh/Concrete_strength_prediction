@@ -1,6 +1,7 @@
+from distutils.log import error
 from wsgiref import simple_server
 from logging import exception
-from flask import Flask, render_template, request, flash, jsonify, url_for
+from flask import Flask, render_template, request, jsonify, url_for, make_response
 from flask_cors import cross_origin, CORS
 import flask_monitoringdashboard as dashboard
 import os
@@ -11,6 +12,12 @@ os.putenv('LC_ALL', 'en_US.UTF-8')
 app = Flask(__name__)
 dashboard.bind(app)
 CORS(app)
+
+app.config["SECRET_KEY"] = "80c2f0634018c50157ef1ff885b0fa3190423755"
+root_dir = os.getcwd()
+app.config["INPUT_DATA_PATH"] = os.path.join(root_dir, "Prediction_Input")
+app.config["SENT_RESULT_PATH"] = os.path.join(root_dir, "Predicted_Output")
+
 
 
 @app.route("/", methods=['GET'])
@@ -38,7 +45,22 @@ def predictFromValue():
 def predictFromCSV():
     try:
         if request.method == 'POST':
-            return render_template('predictCSV.html')            
+            file = request.files['file']
+            print(file)
+            print(file.filename)
+            file.save(
+                os.path.join(app.config["INPUT_DATA_PATH"], "prediction_data.csv")
+            )
+            """schema validation goes here"""
+
+            status = 'error'
+            # status = 'success'
+            val_error = "validation error message"
+            if status == "error": 
+                return jsonify(val_error)
+            else:
+                """ prediction calculation goes here"""
+                return render_template('predctCSV.html')
         else:
             return render_template('predictCSV.html')
     except exception as e:
