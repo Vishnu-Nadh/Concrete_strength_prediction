@@ -8,11 +8,22 @@
     </div>
     <button type="submit" class="form-btn" id="csv-btn">Predict</button>
   </form>
+  <div class="csv-show-result"></div>
   <div class="result-csv">
     <em>Download your result results from here</em>
     <a href="#">predictions.csv</a>
   </div>
-  <br />
+  <div class="csv-loader">
+    <div class="loader-text">
+      Processing of data and output prediction in progress...
+    </div>
+    <div class="balls">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
 </main>
 <script src="../static/csvScript.js"></script>
 {% endblock %}

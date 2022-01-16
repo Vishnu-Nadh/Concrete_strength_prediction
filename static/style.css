@@ -134,8 +134,8 @@ h1 {
 
 .form-values {
   justify-content: center;
-  margin: 0 auto;
-  width: 90%;
+  margin: 4.6rem auto;
+  width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 2.4rem;
@@ -160,6 +160,7 @@ h1 {
   visibility: hidden;
   padding-top: 0.5rem;
   padding-left: 1rem;
+  font-size: 1.4rem;
 }
 
 .form-values div.error input {
@@ -189,27 +190,29 @@ h1 {
   height: 5rem;
   width: 95%;
   padding: 0 1rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #2d47ca;
   background: none;
-  display: inline-block;
+  display: flex;
 }
 
 .form-label {
   position: absolute;
-  top: 1.6rem;
+  top: 1.8rem;
   left: 1rem;
-  font-size: 2rem;
-  color: #2d47ca;
+  font-size: 1.7rem;
+  padding-right: 4rem;
+  color: #213dca;
   cursor: text;
   transition: all 0.2s;
 }
 
 .input-box:focus ~ .form-label,
 .input-box:not(:placeholder-shown).input-box:not(:focus) ~ .form-label {
-  top: -0.8rem;
-  font-size: 1.6rem;
+  top: -0.7rem;
+  font-size: 1.4rem;
   background-color: #f1f3f5;
+  color: #1836ca;
   padding: 0 0.3rem;
 }
 .form-btn {
@@ -217,13 +220,14 @@ h1 {
   align-self: center;
   justify-self: center;
   width: auto;
-  height: 4.2rem;
+  height: 4.8rem;
+  font-weight: 600;
   font-size: 2.4rem;
   color: #364fc7;
   background-color: #f1f3f5;
   border: 2px solid #2d47ca;
-  border-radius: 3px;
-  padding: 0.6rem 1.2rem;
+  border-radius: 0.8rem;
+  padding: 0.8rem 2.4rem;
   transition: all 0.3s;
 }
 
@@ -233,7 +237,7 @@ h1 {
   color: #f1f3f5;
   /* border: none; */
 }
-
+.csv-loader,
 .loader {
   /* display: flex; */
   display: none;
@@ -246,8 +250,8 @@ h1 {
   align-items: center;
   font-size: 2.4rem;
   font-weight: 600;
-  background-color: #f1f3f59d;
-  backdrop-filter: blur(3px);
+  background-color: #f1f3f5b8;
+  backdrop-filter: blur(5px);
   z-index: 100;
   color: #4263eb;
   font-size: 1.8rem;
@@ -291,15 +295,16 @@ h1 {
     transform: translateY(-7rem);
   }
 }
-
+.csv-show-result,
 .show-result {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
-  background-color: #f1f3f59d;
-  backdrop-filter: blur(4px);
+  background-color: #f1f3f5b8;
+  backdrop-filter: blur(5px);
   display: none;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
@@ -319,7 +324,9 @@ h1 {
 /* PREDICT CSV PAGE ----------- */
 
 .main-container {
-  /* min-height: 100vh; */
+  min-height: 68vh;
+  display: flex;
+  align-items: center;
   /* margin: 0 auto; */
 }
 
@@ -379,19 +386,31 @@ textarea {
 
 .csv-error-message {
   height: 2rem;
-  width: 90%;
+  /* width: 90%; */
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
   text-align: center;
   color: #e74c3c;
   font-size: 1.6rem;
   font-style: italic;
 }
+
+.error-style {
+  background-color: #ffa8a878;
+  border: 1px solid #d78f88;
+}
+
 .result-csv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 45rem;
   margin: 0 auto;
-  margin-top: 4.8rem;
   padding: 2rem;
   height: 13rem;
-  display: flex;
+  /* display: flex; */
+  display: none;
   flex-direction: column;
   gap: 1.8rem;
   font-size: 2rem;
@@ -399,6 +418,7 @@ textarea {
   background-color: #f8f9fa;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .result-csv a {

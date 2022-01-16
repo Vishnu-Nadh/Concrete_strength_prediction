@@ -53,14 +53,17 @@ def predictFromCSV():
             )
             """schema validation goes here"""
 
-            status = 'error'
             # status = 'success'
-            val_error = "validation error message"
-            if status == "error": 
-                return jsonify(val_error)
+            dic = {
+            "status" : "error",
+            # "status" : "success",
+            "val_error" : "validation error message"
+            }
+            if dic["status"] == "error": 
+                return jsonify(dic)
             else:
                 """ prediction calculation goes here"""
-                return render_template('predctCSV.html')
+                return jsonify(dic)
         else:
             return render_template('predictCSV.html')
     except exception as e:
