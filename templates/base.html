@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../static/style.css" />
+    <link rel="stylesheet" href="../static/queries.css" />
   </head>
   <body>
     <nav class="nav-bar sticky">
@@ -26,7 +27,7 @@
       <a href="{{ url_for('predictFromValue') }}" class="values nav-link"
         >Predict using values</a
       >
-      <form action="#" method="post" class="retrain-form">
+      <form action="/train" method="post" class="retrain-form">
         <button class="train-btn" type="submit">Retrain the model</button>
       </form>
     </nav>
@@ -34,6 +35,5 @@
       <h1>Concrete Compressive Strength Prediction</h1>
     </header>
     {% block content %} {% endblock%}
-    <script src="../static/script.js"></script>
   </body>
 </html>

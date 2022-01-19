@@ -30,12 +30,13 @@ html {
 }
 
 body {
+  position: relative;
   background-color: #fff;
   font-family: "Inter", sans-serif;
   color: #343a40;
   font-size: 1.6rem;
+  padding-top: 0.1rem;
   margin: 0;
-  margin-top: 10.6rem;
 }
 
 .nav-bar {
@@ -115,6 +116,81 @@ h1 {
   background: -webkit-linear-gradient(#2541cc, #748cee);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.result-loader {
+  /* display: flex; */
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  background-color: #f1f3f5b8;
+  backdrop-filter: blur(5px);
+  z-index: 100;
+  color: #4263eb;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.retrain-loader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f3f5b8;
+  backdrop-filter: blur(5px);
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  z-index: 1300;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f3f5b8;
+  backdrop-filter: blur(5px);
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.result-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45rem;
+  margin: 0 auto;
+  padding: 2rem;
+  height: 13rem;
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  gap: 1.8rem;
+  font-size: 2rem;
+  color: #4263eb;
+  background-color: #f8f9fa;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loader-text {
+  color: #2d47ca;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 600;
 }
 
 /* INDEX.html -----------------*/
@@ -237,26 +313,6 @@ h1 {
   color: #f1f3f5;
   /* border: none; */
 }
-.csv-loader,
-.loader {
-  /* display: flex; */
-  display: none;
-  position: absolute;
-  flex-direction: column;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.4rem;
-  font-weight: 600;
-  background-color: #f1f3f5b8;
-  backdrop-filter: blur(5px);
-  z-index: 100;
-  color: #4263eb;
-  font-size: 1.8rem;
-  font-style: italic;
-}
 
 .balls {
   display: flex;
@@ -294,31 +350,6 @@ h1 {
   to {
     transform: translateY(-7rem);
   }
-}
-.csv-show-result,
-.show-result {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #f1f3f5b8;
-  backdrop-filter: blur(5px);
-  display: none;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-}
-
-#text_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20rem;
-  height: 10rem;
-  color: #4c6ef5;
-  font-size: 2.4rem;
-  font-weight: 600;
-  background-color: rgba(255, 255, 255, 0.856);
 }
 
 /* PREDICT CSV PAGE ----------- */
@@ -398,27 +429,6 @@ textarea {
 .error-style {
   background-color: #ffa8a878;
   border: 1px solid #d78f88;
-}
-
-.result-csv {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 45rem;
-  margin: 0 auto;
-  padding: 2rem;
-  height: 13rem;
-  /* display: flex; */
-  display: none;
-  flex-direction: column;
-  gap: 1.8rem;
-  font-size: 2rem;
-  color: #4263eb;
-  background-color: #f8f9fa;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
 }
 
 .result-csv a {

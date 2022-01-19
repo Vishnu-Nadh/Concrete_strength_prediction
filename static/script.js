@@ -1,9 +1,10 @@
 console.log("js file is connected");
 
-const result = document.querySelector(".show-result");
-const form = document.getElementById("form");
-// const message = document.getElementById("message");
+const overlay = document.querySelector(".overlay");
+const resultLoader = document.querySelector(".result-loader");
+const resultBox = document.querySelector(".result-box");
 
+const form = document.getElementById("form");
 const cement = document.getElementById("cement");
 const blast_furnace_slag = document.getElementById("blast_furnace_slag");
 const fly_ash = document.getElementById("fly_ash");
@@ -26,7 +27,7 @@ const arr = [
 
 form.addEventListener("submit", (e) => {
   output = checkInputs();
-  console.log(output);
+  // console.log(output);
   if (output === "error") {
     e.preventDefault();
   } else {
@@ -44,16 +45,16 @@ form.addEventListener("submit", (e) => {
     const xhr = new XMLHttpRequest();
     xhr.open("post", "/predict_from_values", true);
     xhr.setRequestHeader("content-type", "application/json");
-    document.querySelector(".loader").style.display = "flex";
+    resultLoader.style.display = "flex";
 
     xhr.onload = function () {
       console.log("form has submitted");
       console.log(this.responseText);
-      result.style.display = "flex";
-      document.getElementById("text_box").innerText = JSON.parse(
-        this.responseText
-      );
-      document.querySelector(".loader").style.display = "none";
+
+      overlay.style.display = "flex";
+      resultBox.style.display = "flex";
+      resultBox.innerText = JSON.parse(this.responseText);
+      resultLoader.style.display = "none";
 
       //   document.getElementById("output").style.display = "flex";
     };
@@ -61,8 +62,9 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-result.addEventListener("click", function () {
-  result.style.display = "none";
+overlay.addEventListener("click", function () {
+  overlay.style.display = "none";
+  resultBox.style.display = "none";
 });
 
 function checkInputs() {
@@ -184,3 +186,27 @@ function setSuccess(input) {
   formField.classList.remove("error");
   formField.classList.add("success");
 }
+
+//  retrain ajax
+const retrainForm = document.querySelector(".retrain-form");
+const retrainLoader = document.querySelector(".retrain-loader");
+
+retrainForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const data = {
+    start: true,
+  };
+  const xhr = new XMLHttpRequest();
+  xhr.open("post", "/train", true);
+  xhr.setRequestHeader("content-type", "application/json");
+  retrainLoader.style.display = "flex";
+
+  xhr.onload = function () {
+    console.log("train request submitted");
+    overlay.style.display = "flex";
+    resultBox.style.display = "flex";
+    resultBox.innerText = JSON.parse(this.responseText);
+    retrainLoader.style.display = "none";
+  };
+  xhr.send(JSON.stringify(data));
+});

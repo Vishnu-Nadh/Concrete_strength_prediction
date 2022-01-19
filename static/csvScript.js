@@ -4,10 +4,12 @@ const csv_form = document.querySelector(".csv-form");
 const input_file = document.getElementById("csv-file");
 const uploadBtn = document.getElementById("csv-btn");
 const errorDiv = document.querySelector(".csv-error-message");
-const loaderOutput = document.querySelector(".csv-loader");
-const csvResult = document.querySelector(".csv-show-result");
+
+const overlay = document.querySelector(".overlay");
+const resultLoader = document.querySelector(".result-loader");
+const resultBox = document.querySelector(".result-box");
+
 const loaderText = document.querySelector(".loader-text");
-const resultBox = document.querySelector(".result-csv");
 
 csv_form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -35,7 +37,7 @@ csv_form.addEventListener("submit", function (e) {
         outputObj = JSON.parse(this.response);
         console.log(outputObj);
         if (outputObj["status"] === "error") {
-          loaderOutput.style.display = "none";
+          resultLoader.style.display = "none";
           console.log("displaying validation error");
 
           errorDiv.innerText = outputObj["val_error"];
@@ -47,13 +49,13 @@ csv_form.addEventListener("submit", function (e) {
           errorDiv.classList.remove("error-style");
 
           loaderText.innerText = "Predicting the output..";
-          loaderOutput.style.display = "none";
-          csvResult.style.display = "flex";
+          resultLoader.style.display = "none";
+          overlay.style.display = "flex";
           resultBox.style.display = "flex";
         }
       };
       xhr.send(data);
-      loaderOutput.style.display = "flex";
+      resultLoader.style.display = "flex";
     }
   }
 });
@@ -76,7 +78,32 @@ function isFileCSV() {
   }
 }
 
-csvResult.addEventListener("click", function () {
-  csvResult.style.display = "none";
+overlay.addEventListener("click", function () {
+  overlay.style.display = "none";
   resultBox.style.display = "none";
+});
+
+// retrain ajax call
+
+const retrainForm = document.querySelector(".retrain-form");
+const retrainLoader = document.querySelector(".retrain-loader");
+
+retrainForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const data = {
+    start: true,
+  };
+  const xhr = new XMLHttpRequest();
+  xhr.open("post", "/train", true);
+  xhr.setRequestHeader("content-type", "application/json");
+  retrainLoader.style.display = "flex";
+
+  xhr.onload = function () {
+    console.log("train request submitted");
+    overlay.style.display = "flex";
+    resultBox.style.display = "flex";
+    resultBox.innerText = JSON.parse(this.responseText);
+    retrainLoader.style.display = "none";
+  };
+  xhr.send(JSON.stringify(data));
 });

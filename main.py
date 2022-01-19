@@ -25,6 +25,20 @@ app.config["SENT_RESULT_PATH"] = os.path.join(root_dir, "Predicted_Output")
 def home():
     return render_template('index.html')
 
+@app.route("/train", methods = ['GET', 'POST'])
+@cross_origin()
+def trainModel():
+    try:
+        if request.method == 'POST':
+            if request.json["start"]:
+                """model training goes here"""
+                output = "Model training completed!"
+                return jsonify(output)
+                # return render_template('index.html')
+        else:
+            return render_template('index.html')
+    except exception as e:
+         raise e
 
 @app.route("/predict_from_values", methods = ['GET', 'POST'])
 @cross_origin()
@@ -55,8 +69,8 @@ def predictFromCSV():
 
             # status = 'success'
             dic = {
-            "status" : "error",
-            # "status" : "success",
+            # "status" : "error",
+            "status" : "success",
             "val_error" : "validation error message"
             }
             if dic["status"] == "error": 
@@ -76,3 +90,4 @@ if __name__ == "__main__":
     httpd = simple_server.make_server(host, port, app)
     print("Serving on %s %d" % (host, port))
     httpd.serve_forever()
+

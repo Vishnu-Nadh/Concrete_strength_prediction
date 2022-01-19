@@ -128,10 +128,13 @@
     <button type="submit" class="form-btn">Predict</button>
     <br /><br />
   </form>
-  <div class="show-result">
-    <div id="text_box"></div>
-  </div>
-  <div class="loader">
+
+  <!-- result overlay -->
+  <div class="overlay"></div>
+  <div class="result-box"></div>
+
+  <!-- result loader -->
+  <div class="result-loader">
     Prediction in progress...
     <div class="balls">
       <div></div>
@@ -141,5 +144,10 @@
     </div>
   </div>
 </main>
+
+<!-- retrain loader -->
+<div class="retrain-loader">
+  <div class="loader-text">Your model is being Retrained...</div>
+</div>
 <script src="../static/script.js"></script>
 {% endblock %}
