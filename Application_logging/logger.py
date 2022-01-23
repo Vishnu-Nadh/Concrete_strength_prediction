@@ -10,6 +10,10 @@ class App_Logger:
         self.date = self.now.date()
         self.current_time = self.now.strftime("%H:%M:%S")
         file_object.write(
-            str(self.date) + "/" + str(self.current_time) + "\t\t" + log_message +"\n")
+            str(self.date) + "/" + str(self.current_time) + "\t\t" + log_message + "\n"
+        )
 
 
+# file = open("Training_Logs/Training_Main_Log.txt", "a+")
+# applog = App_Logger()
+# applog.log(file, "some test message")

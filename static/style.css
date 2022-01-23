@@ -81,7 +81,7 @@ body {
 
 .train-btn {
   background-color: #dbe4ff;
-  color: #16990a;
+  color: #7630ff;
   padding: 0.6rem 1.2rem;
   font-weight: 600;
   font-size: 1.8rem;
@@ -144,7 +144,7 @@ h1 {
   line-height: 1;
   letter-spacing: -0.05rem;
   /* color: #364fc7; */
-  background: -webkit-linear-gradient(#2541cc, #748cee);
+  background: -webkit-linear-gradient(#2541cc, #7630ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -1,10 +1,10 @@
-from distutils.log import error
 from wsgiref import simple_server
-from logging import exception
-from flask import Flask, render_template, request, jsonify, url_for, make_response
+from flask import Flask, render_template, request, jsonify
 from flask_cors import cross_origin, CORS
 import flask_monitoringdashboard as dashboard
 import os
+from trainingValidationInsertion import Train_Validation
+
 
 os.putenv("LANG", "en_US.UTF-8")
 os.putenv("LC_ALL", "en_US.UTF-8")
@@ -31,14 +31,18 @@ def trainModel():
     try:
         if request.method == "POST":
             if request.json["start"]:
+                path = "Training_Batch_Files/"
+                train_validation = Train_Validation(path)
+                train_validation.training_data_validation()
 
                 """model training goes here"""
-                output = "Model training completed!"
+                output = "training data validation completed"
                 return jsonify(output)
                 # return render_template('index.html')
         else:
             return render_template("index.html")
-    except exception as e:
+
+    except Exception as e:
         raise e
 
 
@@ -53,7 +57,8 @@ def predictFromValue():
             # return render_template('index.html')
         else:
             return render_template("index.html")
-    except exception as e:
+
+    except Exception as e:
         raise e
 
 
@@ -83,13 +88,16 @@ def predictFromCSV():
                 return jsonify(dic)
         else:
             return render_template("predictCSV.html")
-    except exception as e:
+    except Exception as e:
         raise e
 
 
-port = int(os.getenv("PORT", 5000))
+# port = int(os.getenv("PORT", 5000))
+# if __name__ == "__main__":
+#     host = "0.0.0.0"
+#     httpd = simple_server.make_server(host, port, app)
+#     print(f"Serving on {host}:5000")
+#     httpd.serve_forever()
+
 if __name__ == "__main__":
-    host = "0.0.0.0"
-    httpd = simple_server.make_server(host, port, app)
-    print(f"Serving on {host}:5000")
-    httpd.serve_forever()
+    app.run(debug=True)
