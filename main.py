@@ -6,8 +6,8 @@ from flask_cors import cross_origin, CORS
 import flask_monitoringdashboard as dashboard
 import os
 
-os.putenv('LANG', 'en_US.UTF-8')
-os.putenv('LC_ALL', 'en_US.UTF-8')
+os.putenv("LANG", "en_US.UTF-8")
+os.putenv("LC_ALL", "en_US.UTF-8")
 
 app = Flask(__name__)
 dashboard.bind(app)
@@ -19,47 +19,50 @@ app.config["INPUT_DATA_PATH"] = os.path.join(root_dir, "Prediction_Input")
 app.config["SENT_RESULT_PATH"] = os.path.join(root_dir, "Predicted_Output")
 
 
-
-@app.route("/", methods=['GET'])
+@app.route("/", methods=["GET"])
 @cross_origin()
 def home():
-    return render_template('index.html')
+    return render_template("index.html")
 
-@app.route("/train", methods = ['GET', 'POST'])
+
+@app.route("/train", methods=["GET", "POST"])
 @cross_origin()
 def trainModel():
     try:
-        if request.method == 'POST':
+        if request.method == "POST":
             if request.json["start"]:
+
                 """model training goes here"""
                 output = "Model training completed!"
                 return jsonify(output)
                 # return render_template('index.html')
         else:
-            return render_template('index.html')
+            return render_template("index.html")
     except exception as e:
-         raise e
+        raise e
 
-@app.route("/predict_from_values", methods = ['GET', 'POST'])
+
+@app.route("/predict_from_values", methods=["GET", "POST"])
 @cross_origin()
 def predictFromValue():
     try:
-        if request.method == 'POST':
+        if request.method == "POST":
             data_dict = request.json
             output = "45 Mpa"
             return jsonify(output)
             # return render_template('index.html')
         else:
-            return render_template('index.html')
+            return render_template("index.html")
     except exception as e:
-         raise e
-        
-@app.route("/predict_from_csv", methods = ['GET', 'POST'])
+        raise e
+
+
+@app.route("/predict_from_csv", methods=["GET", "POST"])
 @cross_origin()
 def predictFromCSV():
     try:
-        if request.method == 'POST':
-            file = request.files['file']
+        if request.method == "POST":
+            file = request.files["file"]
             print(file)
             print(file.filename)
             file.save(
@@ -69,25 +72,24 @@ def predictFromCSV():
 
             # status = 'success'
             dic = {
-            # "status" : "error",
-            "status" : "success",
-            "val_error" : "validation error message"
+                # "status" : "error",
+                "status": "success",
+                "val_error": "validation error message",
             }
-            if dic["status"] == "error": 
+            if dic["status"] == "error":
                 return jsonify(dic)
             else:
-                """ prediction calculation goes here"""
+                """prediction calculation goes here"""
                 return jsonify(dic)
         else:
-            return render_template('predictCSV.html')
+            return render_template("predictCSV.html")
     except exception as e:
-         raise e
+        raise e
 
 
 port = int(os.getenv("PORT", 5000))
 if __name__ == "__main__":
-    host = '0.0.0.0'
+    host = "0.0.0.0"
     httpd = simple_server.make_server(host, port, app)
-    print("Serving on %s %d" % (host, port))
+    print(f"Serving on {host}:5000")
     httpd.serve_forever()
-

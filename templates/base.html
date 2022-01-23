@@ -10,6 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
+    ></script>
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -21,19 +29,36 @@
   </head>
   <body>
     <nav class="nav-bar sticky">
-      <a href="{{ url_for('predictFromCSV') }}" class="csv nav-link"
-        >Predict using Batch file</a
-      >
-      <a href="{{ url_for('predictFromValue') }}" class="values nav-link"
-        >Predict using values</a
-      >
+      <button class="btn-mobile-nav">
+        <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+        <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+      </button>
+      <div class="page-links-div">
+        <a href="{{ url_for('predictFromCSV') }}" class="csv-link nav-link"
+          >Predict using Batch file</a
+        >
+        <a href="{{ url_for('predictFromValue') }}" class="values-link nav-link"
+          >Predict using values</a
+        >
+      </div>
       <form action="/train" method="post" class="retrain-form">
         <button class="train-btn" type="submit">Retrain the model</button>
       </form>
     </nav>
+
     <header class="header sticky">
       <h1>Concrete Compressive Strength Prediction</h1>
     </header>
     {% block content %} {% endblock%}
+    <!-- <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
+    <script>
+      console.log("base js connected");
+      const navBtn = document.querySelector(".btn-mobile-nav");
+      const navBar = document.querySelector(".nav-bar");
+
+      navBtn.addEventListener("click", function () {
+        navBar.classList.toggle("nav-open");
+      });
+    </script>
   </body>
 </html>
