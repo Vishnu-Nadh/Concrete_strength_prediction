@@ -51,3 +51,7 @@
 2022-01-23/22:56:53		column length validation passed Concrete_Data_1.csv moved to GoodData folder
 2022-01-23/22:56:53		column length validation passed Concrete_Data_2.csv moved to GoodData folder
 2022-01-23/22:56:53		column length validation failed Concrete_Data_3.csv moved to BadData folder
+2022-01-29/19:32:47		column length validation passed Concrete_Data.csv moved to GoodData folder
+2022-01-29/19:32:47		column length validation passed Concrete_Data_1.csv moved to GoodData folder
+2022-01-29/19:32:47		column length validation passed Concrete_Data_2.csv moved to GoodData folder
+2022-01-29/19:32:47		column length validation failed Concrete_Data_3.csv moved to BadData folder

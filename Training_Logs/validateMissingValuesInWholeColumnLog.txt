@@ -22,3 +22,5 @@
 2022-01-23/22:56:31		missing value in whole column validation failed. Concrete_Data_2.csv moved to bad data folder!
 2022-01-23/22:56:53		Concrete_Data.csv passed missing value in whole column validation
 2022-01-23/22:56:53		missing value in whole column validation failed. Concrete_Data_2.csv moved to bad data folder!
+2022-01-29/19:32:47		Concrete_Data.csv passed missing value in whole column validation
+2022-01-29/19:32:47		missing value in whole column validation failed. Concrete_Data_2.csv moved to bad data folder!

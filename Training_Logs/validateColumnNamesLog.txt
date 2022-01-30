@@ -34,3 +34,6 @@
 2022-01-23/22:56:53		Concrete_Data.csv passed acolumn name validation
 2022-01-23/22:56:53		Column name validation failed. Concrete_Data_1.csv moved to bad data folder!
 2022-01-23/22:56:53		Concrete_Data_2.csv passed acolumn name validation
+2022-01-29/19:32:47		Concrete_Data.csv passed acolumn name validation
+2022-01-29/19:32:47		Column name validation failed. Concrete_Data_1.csv moved to bad data folder!
+2022-01-29/19:32:47		Concrete_Data_2.csv passed acolumn name validation

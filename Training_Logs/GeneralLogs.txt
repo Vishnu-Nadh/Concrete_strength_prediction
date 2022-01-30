@@ -37,3 +37,6 @@
 2022-01-23/22:56:53		Good data folder deleted before starting of validation!
 2022-01-23/22:56:53		Bad data folder deleted before starting of validation!
 2022-01-23/22:56:53		created GoodData and BadData folder.
+2022-01-29/19:32:47		Good data folder deleted before starting of validation!
+2022-01-29/19:32:47		Bad data folder deleted before starting of validation!
+2022-01-29/19:32:47		created GoodData and BadData folder.

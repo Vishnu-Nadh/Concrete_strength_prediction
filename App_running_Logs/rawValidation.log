@@ -1,0 +1,20 @@
+[2022-01-30 11:25:56,454 : INFO : rawValidation] - starting getValuesFromScheama...
+[2022-01-30 11:25:56,454 : INFO : rawValidation] - Extracted values from schema
+[2022-01-30 11:25:56,455 : INFO : rawValidation] - Entered to deleteExistingGoodDataDirectory function
+[2022-01-30 11:25:56,456 : INFO : rawValidation] - deleted Good data directory
+[2022-01-30 11:25:56,456 : INFO : rawValidation] - Entered to deleteExistingBadDataDirectory function
+[2022-01-30 11:25:56,458 : INFO : rawValidation] - deleted Bad data directory
+[2022-01-30 11:25:56,458 : INFO : rawValidation] - starting to create good and bad data directory..
+[2022-01-30 11:25:56,459 : INFO : rawValidation] - Created good new and bad data directory!
+[2022-01-30 11:25:56,459 : INFO : rawValidation] - stating column length validation...
+[2022-01-30 11:25:56,475 : DEBUG : rawValidation] - file Concrete_Data.csv succeeded column number validation. file copied to bad good data folder
+[2022-01-30 11:25:56,486 : DEBUG : rawValidation] - file Concrete_Data_1.csv succeeded column number validation. file copied to bad good data folder
+[2022-01-30 11:25:56,494 : DEBUG : rawValidation] - file Concrete_Data_2.csv succeeded column number validation. file copied to bad good data folder
+[2022-01-30 11:25:56,504 : DEBUG : rawValidation] - file Concrete_Data_3.csv failed column number validation. file copied to bad data folder
+[2022-01-30 11:25:56,505 : INFO : rawValidation] - starting column names validation...
+[2022-01-30 11:25:56,523 : DEBUG : rawValidation] - file Concrete_Data.csv passed column name validation
+[2022-01-30 11:25:56,542 : DEBUG : rawValidation] - file Concrete_Data_1.csv failed column name validation at column number:2. file moved to bad data folder
+[2022-01-30 11:25:56,559 : DEBUG : rawValidation] - file Concrete_Data_2.csv passed column name validation
+[2022-01-30 11:25:56,559 : INFO : rawValidation] - started validating missing value in whole column...
+[2022-01-30 11:25:56,571 : DEBUG : rawValidation] - Concrete_Data.csv passed validation of missing value in all columns
+[2022-01-30 11:25:56,584 : DEBUG : rawValidation] - In Concrete_Data_2.csv column : Age (day) has all values missing. file moved to bad data folder

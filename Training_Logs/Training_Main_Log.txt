@@ -11,3 +11,4 @@
 2022-01-23/22:55:48		starting validation of data for training.
 2022-01-23/22:56:30		starting validation of data for training.
 2022-01-23/22:56:53		starting validation of data for training.
+2022-01-29/19:32:46		starting validation of data for training.

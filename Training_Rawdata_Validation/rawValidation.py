@@ -1,8 +1,13 @@
-from Application_logging.logger import App_Logger
 import os
 import shutil
 import json
 import pandas as pd
+import logging
+
+from application_logger.loggerConfigure import configure_logger
+
+logger = logging.getLogger(__name__)
+logger = configure_logger(logger, "rawValidation.log")
 
 
 class RawData_Validation:
@@ -11,7 +16,6 @@ class RawData_Validation:
 
     def __init__(self, path):
         self.Batch_Directory = path
-        self.logger = App_Logger()
         self.schema_path = "data_validation_Schemas/training_schema.json"
 
     def getValuesFromSchema(self):
@@ -22,32 +26,21 @@ class RawData_Validation:
             with open(self.schema_path) as f:
                 schema_dic = json.load(f)
                 f.close()
-
+            logger.info("starting getValuesFromScheama...")
             numberOfColumns = schema_dic["NumberofColumns"]
             columnNames = schema_dic["ColName"]
-
-            file = open("Training_Logs/valuesfromSchemaValidationLog.txt", "a+")
-            self.logger.log(file, "extracted schema values successfully")
-            file.close()
+            logger.info("Extracted values from schema")
 
         except ValueError:
-            file = open("Training_Logs/valuesfromSchemaValidationLog.txt", "a+")
-            self.logger.log(
-                file, "ValueError:Value not found inside schema_training.json"
-            )
-            file.close()
+            logger.exception(f"Error : {ValueError}")
             raise ValueError
 
         except KeyError:
-            file = open("Training_Logs/valuesfromSchemaValidationLog.txt", "a+")
-            self.logger.log(file, "KeyError:Key value error incorrect key passed")
-            file.close()
+            logger.exception(f"Error : {KeyError}")
             raise KeyError
 
         except Exception as e:
-            file = open("Training_Logs/valuesfromSchemaValidationLog.txt", "a+")
-            self.logger.log(file, "Error occured during get values from schema.!")
-            file.close()
+            logger.exception(f"Error occured : {e}")
             raise e
 
         return numberOfColumns, columnNames
@@ -57,22 +50,14 @@ class RawData_Validation:
         to remove old good data before starting new validation
         """
         try:
+            logger.info("Entered to deleteExistingGoodDataDirectory function")
             folderPath = "training_Data_Validated/"
             if os.path.isdir(folderPath + "GoodData/"):
                 shutil.rmtree(folderPath + "GoodData/")
-                f = open("Training_Logs/GeneralLogs.txt", "a+")
-                self.logger.log(
-                    f, "Good data folder deleted before starting of validation!"
-                )
-                f.close()
+            logger.info("deleted Good data directory")
 
         except OSError:
-            f = open("Training_Logs/GeneralLogs.txt", "a+")
-            self.logger.log(
-                f,
-                "Error occured while deleting good data folder before data validation..!",
-            )
-            f.close()
+            logger.exception(f"OS Error occured :{OSError}")
             raise OSError
 
     def deleteExistingBadDataDirectory(self):
@@ -80,44 +65,32 @@ class RawData_Validation:
         to remove old bad data before starting new validation
         """
         try:
+            logger.info("Entered to deleteExistingBadDataDirectory function")
             folderPath = "training_Data_Validated/"
             if os.path.isdir(folderPath + "BadData/"):
                 shutil.rmtree(folderPath + "BadData/")
-                f = open("Training_Logs/GeneralLogs.txt", "a+")
-                self.logger.log(
-                    f, "Bad data folder deleted before starting of validation!"
-                )
-                f.close()
+            logger.info("deleted Bad data directory")
 
         except OSError:
-            f = open("Training_Logs/GeneralLogs.txt", "a+")
-            self.logger.log(
-                f,
-                "Error occured while deleting bad data folder before data validation..!",
-            )
-            f.close()
+            logger.exception(f"OS Error occured :{OSError}")
             raise OSError
 
     def createGoodAndBadDataDirectory(self):
         """this function create good and bad data directory for saving validated input data"""
         try:
+            logger.info("starting to create good and bad data directory..")
             path = os.path.join("training_data_validated/", "GoodData/")
             if not os.path.isdir(path):
                 os.makedirs(path)
             path = os.path.join("training_data_validated/", "BadData/")
             if not os.path.isdir(path):
                 os.makedirs(path)
-
-            f = open("Training_Logs/GeneralLogs.txt", "a+")
-            self.logger.log(f, "created GoodData and BadData folder.")
-            f.close()
+            logger.info("Created good new and bad data directory!")
 
         except OSError:
-            f = open("Training_Logs/GeneralLogs.txt", "a+")
-            self.logger.log(
-                f, "Error occured while creating good and bad data directory !"
+            logger.exception(
+                f"Error during creating good and bad data folder : {OSError}"
             )
-            f.close()
             raise OSError
 
     def validateColumnLength(self, numberOfColumns):
@@ -131,7 +104,7 @@ class RawData_Validation:
         self.deleteExistingBadDataDirectory()
         try:
             self.createGoodAndBadDataDirectory()
-            f = open("Training_Logs/validateColumnLengthLog.txt", "a+")
+            logger.info("stating column length validation...")
             for csv in os.listdir(self.Batch_Directory):
                 data = pd.read_csv(os.path.join(self.Batch_Directory, csv))
                 if data.shape[1] == numberOfColumns:
@@ -139,33 +112,26 @@ class RawData_Validation:
                         os.path.join(self.Batch_Directory, csv),
                         "training_Data_Validated/GoodData",
                     )
-                    self.logger.log(
-                        f,
-                        f"column length validation passed {csv} moved to GoodData folder",
+                    logger.debug(
+                        f"file {csv} succeeded column number validation. file copied to bad good data folder"
                     )
                 else:
                     shutil.copy(
                         os.path.join(self.Batch_Directory, csv),
                         "training_Data_Validated/BadData",
                     )
-                    self.logger.log(
-                        f,
-                        f"column length validation failed {csv} moved to BadData folder",
+                    logger.debug(
+                        f"file {csv} failed column number validation. file copied to bad data folder"
                     )
-            f.close()
 
         except Exception as e:
-            f = open("Training_Logs/validateColumnLengthLog.txt", "a+")
-            self.logger.log(
-                f, "Error occured during during validation of column number..!"
-            )
-            f.close()
+            logger.exception(f"Error while column length validation : {e}")
             raise e
 
     def validateColumnNames(self, columnNames):
         try:
-            f = open("Training_Logs/validateColumnNamesLog.txt", "a+")
 
+            logger.info("starting column names validation...")
             column_names = list(columnNames.keys())
             print(column_names)
             for data in os.listdir("training_Data_Validated/GoodData/"):
@@ -181,31 +147,26 @@ class RawData_Validation:
                             "training_Data_Validated/GoodData/" + data,
                             "training_Data_Validated/BadData",
                         )
-                        self.logger.log(
-                            f,
-                            f"Column name validation failed. {data} moved to bad data folder!",
+                        logger.debug(
+                            f"file {data} failed column name validation at column number:{index + 1}. file moved to bad data folder"
                         )
                         break
+
                 if count == 0:
-                    self.logger.log(f, f"{data} passed acolumn name validation")
-            f.close()
+                    logger.debug(f"file {data} passed column name validation")
 
         except OSError:
-            f = open("Training_Logs/validateColumnNamesLog.txt", "a+")
-            self.logger.log(f, "Error while moving data to bad data folder!")
-            f.close()
+            logger.exception(f"OSError during column name validation : {OSError}")
             raise OSError
 
         except Exception as e:
-            f = open("Training_Logs/validateColumnNamesLog.txt", "a+")
-            self.logger.log(f, "Error during validation of column names..!")
-            f.close()
+            logger.exception(f"Error during column name validation : {e}")
             raise e
 
     def validateMissingValuesInWholeColumn(self):
         """this function validate whether any column in dataset has all values null"""
         try:
-            f = open("Training_Logs/validateMissingValuesInWholeColumnLog.txt", "a+")
+            logger.info("started validating missing value in whole column...")
             for data in os.listdir("training_Data_Validated/GoodData/"):
                 df = pd.read_csv(
                     os.path.join("training_Data_Validated/GoodData/", data)
@@ -218,27 +179,20 @@ class RawData_Validation:
                             "training_Data_Validated/GoodData/" + data,
                             "training_Data_Validated/BadData",
                         )
-                        self.logger.log(
-                            f,
-                            f"missing value in whole column validation failed. {data} moved to bad data folder!",
+                        logger.debug(
+                            f"In {data} column : {column} has all values missing. file moved to bad data folder"
                         )
                         break
+
                 if count == 0:
-                    self.logger.log(
-                        f, f"{data} passed missing value in whole column validation"
+                    logger.debug(
+                        f"{data} passed validation of missing value in all columns"
                     )
-            f.close()
 
         except OSError:
-            f = open("Training_Logs/validateMissingValuesInWholeColumnLog.txt", "a+")
-            self.logger.log(f, "Error while moving data to bad data folder!")
-            f.close()
+            logger.exception(f"OS exception occured : {OSError}")
             raise OSError
 
         except Exception as e:
-            f = open("Training_Logs/validateMissingValuesInWholeColumnLog.txt", "a+")
-            self.logger.log(
-                f, "Error during missing value in whole column validataion!"
-            )
-            f.close()
+            logger.exception(f"Error occured : {e}")
             raise e
