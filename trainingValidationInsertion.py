@@ -1,4 +1,5 @@
 from Training_Rawdata_Validation.rawValidation import RawData_Validation
+from DBoperarions.dbOperations import DB_operations
 from application_logger.loggerConfigure import configure_logger
 import logging
 import os
@@ -10,6 +11,7 @@ logger = configure_logger(logger, "trainingValidationInsertion.log")
 class Train_Validation:
     def __init__(self, path):
         self.raw_data_validation = RawData_Validation(path)
+        self.dboperation = DB_operations()
 
     def training_data_validation(self):
         try:
@@ -29,6 +31,23 @@ class Train_Validation:
             # validating missing values in the whole column
             self.raw_data_validation.validateMissingValuesInWholeColumn()
             logger.info("Training data validation completed!")
+
+            self.dboperation.createTableDb("Training", columnNames)
+            logger.info("Table creation completed")
+
+            self.dboperation.insertIntoTableGoodData("Training")
+            logger.info("csv data inserted into database table")
+
+            self.raw_data_validation.deleteExistingGoodDataDirectory()
+            logger.info("Deleted good data folder")
+
+            self.raw_data_validation.moveBadDataToArchiveBad()
+            logger.info("bad data files moved to archived folder")
+
+            self.raw_data_validation.deleteExistingBadDataDirectory()
+
+            self.dboperation.selectTableFromDBintoCSV("Training")
+            logger.info("databse data exported to csv succussfully")
 
         except Exception as e:
             logger.exception(f"Error during training data validation : {e}")

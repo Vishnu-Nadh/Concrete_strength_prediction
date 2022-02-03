@@ -3,6 +3,7 @@ import shutil
 import json
 import pandas as pd
 import logging
+from datetime import datetime
 
 from application_logger.loggerConfigure import configure_logger
 
@@ -93,6 +94,37 @@ class RawData_Validation:
             )
             raise OSError
 
+    def moveBadDataToArchiveBad(self):
+        """this function move the bad files from bad data folder ot archive bad folder"""
+        now = datetime.now()
+        date = now.date()
+        time = now.strftime("%H%M%S")
+
+        try:
+            src = "training_Data_Validated/BadData/"
+            if os.path.isdir(src):
+                path = "Tranining_ArchivedBadData"
+                if not os.path.isdir(path):
+                    os.makedirs(path)
+                filepath = (
+                    "Training_ArchivedBadData/Bad_data_" + str(date) + "_" + str(time)
+                )
+                if not os.path.isdir(filepath):
+                    os.makedirs(filepath)
+                files = os.listdir(src)
+                for f in files:
+                    if f not in os.listdir(filepath):
+                        shutil.move(src + f, filepath)
+                logger.info("Bad file moved to archive bad data folder")
+                path = "training_Data_Validated/"
+                if os.path.isdir(path + "BadData/"):
+                    shutil.rmtree(path + "BadData/")
+                logger.info("bad data folder deleted succussfully")
+
+        except Exception as e:
+            logger.exception(f"error while moving bad files to archive bad folder: {e}")
+            raise e
+
     def validateColumnLength(self, numberOfColumns):
 
         """This function validates the number of columns in the csv files.
@@ -133,7 +165,6 @@ class RawData_Validation:
 
             logger.info("starting column names validation...")
             column_names = list(columnNames.keys())
-            print(column_names)
             for data in os.listdir("training_Data_Validated/GoodData/"):
                 df = pd.read_csv(
                     os.path.join("training_Data_Validated/GoodData/", data)
@@ -195,4 +226,4 @@ class RawData_Validation:
 
         except Exception as e:
             logger.exception(f"Error occured : {e}")
-            raise e
+            raise
