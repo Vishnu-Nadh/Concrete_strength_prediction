@@ -5,6 +5,7 @@ import csv
 import logging
 from application_logger.loggerConfigure import configure_logger
 
+
 logger = logging.getLogger(__name__)
 logger = configure_logger(logger, "dbOperations.log")
 
@@ -75,6 +76,32 @@ class DB_operations:
             conn.close()
             raise e
 
+    def deleteTableContentFromDB(self, database):
+        """this function deletes all data from existing table in database
+        ( this function is called only if the input data folder is not being replaced
+        by new data, so that same data will not be uploaded twice into databse)
+
+        Args:
+            database (string): database name
+        """
+        conn = self.databaseConnection(database)
+        c = conn.cursor()
+        c.execute(
+            "SELECT count(name)  FROM sqlite_master WHERE type = 'table'AND name = 'Good_Raw_Data'"
+        )
+        try:
+            if (
+                c.execute("SELECT COUNT(*) FROM Good_Raw_Data") != 0
+            ):  # table is not empty
+                c.execute("DELETE FROM Good_Raw_Data")
+                conn.commit()
+                conn.close()
+                logger.info("deleted all data from table before adding new data")
+
+        except Exception as e:
+            logger.exception(f"Error while deleting all data from table : {e}")
+            raise e
+
     def insertIntoTableGoodData(self, database):
 
         conn = self.databaseConnection(database)
@@ -95,12 +122,13 @@ class DB_operations:
                                         values=(list)
                                     )
                                 )
-                                logger.debug("value inserted into table")
                                 conn.commit()
 
                             except Exception as e:
                                 logger.exception(f"{e}")
                                 raise e
+
+                logger.info(f"{file} values inserted into table")
 
             except Exception as e:
                 conn.rollback()

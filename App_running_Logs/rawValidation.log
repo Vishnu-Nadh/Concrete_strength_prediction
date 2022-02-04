@@ -618,3 +618,153 @@
 [2022-02-04 01:02:26,644 : INFO : rawValidation] - bad data folder deleted succussfully
 [2022-02-04 01:02:26,644 : INFO : rawValidation] - Entered to deleteExistingBadDataDirectory function
 [2022-02-04 01:02:26,644 : INFO : rawValidation] - deleted Bad data directory
+[2022-02-04 10:31:38,026 : INFO : rawValidation] - starting getValuesFromScheama...
+[2022-02-04 10:31:38,027 : INFO : rawValidation] - Extracted values from schema
+[2022-02-04 10:31:38,027 : INFO : rawValidation] - Entered to deleteExistingGoodDataDirectory function
+[2022-02-04 10:31:38,027 : INFO : rawValidation] - deleted Good data directory
+[2022-02-04 10:31:38,027 : INFO : rawValidation] - Entered to deleteExistingBadDataDirectory function
+[2022-02-04 10:31:38,027 : INFO : rawValidation] - deleted Bad data directory
+[2022-02-04 10:31:38,027 : INFO : rawValidation] - starting to create good and bad data directory..
+[2022-02-04 10:31:38,028 : INFO : rawValidation] - Created good new and bad data directory!
+[2022-02-04 10:31:38,029 : INFO : rawValidation] - stating column length validation...
+[2022-02-04 10:31:38,053 : DEBUG : rawValidation] - file Concrete_Data.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:31:38,059 : DEBUG : rawValidation] - file Concrete_Data_1.csv failed column number validation. file copied to bad data folder
+[2022-02-04 10:31:38,074 : DEBUG : rawValidation] - file Concrete_Data_2.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:31:38,084 : DEBUG : rawValidation] - file Concrete_Data_3.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:31:38,084 : INFO : rawValidation] - starting column names validation...
+[2022-02-04 10:31:38,108 : DEBUG : rawValidation] - file Concrete_Data.csv passed column name validation
+[2022-02-04 10:31:38,129 : DEBUG : rawValidation] - file Concrete_Data_2.csv failed column name validation at column number:4. file moved to bad data folder
+[2022-02-04 10:31:38,142 : DEBUG : rawValidation] - file Concrete_Data_3.csv passed column name validation
+[2022-02-04 10:31:38,142 : INFO : rawValidation] - started validating missing value in whole column...
+[2022-02-04 10:31:38,155 : DEBUG : rawValidation] - Concrete_Data.csv passed validation of missing value in all columns
+[2022-02-04 10:31:38,167 : DEBUG : rawValidation] - In Concrete_Data_3.csv column : Fly_Ash has all values missing. file moved to bad data folder
+[2022-02-04 10:31:56,614 : INFO : rawValidation] - Entered to deleteExistingGoodDataDirectory function
+[2022-02-04 10:31:56,615 : INFO : rawValidation] - deleted Good data directory
+[2022-02-04 10:31:56,648 : INFO : rawValidation] - Bad file moved to archive bad data folder
+[2022-02-04 10:31:56,649 : INFO : rawValidation] - bad data folder deleted succussfully
+[2022-02-04 10:31:56,649 : INFO : rawValidation] - Entered to deleteExistingBadDataDirectory function
+[2022-02-04 10:31:56,650 : INFO : rawValidation] - deleted Bad data directory
+[2022-02-04 10:35:09,674 : INFO : rawValidation] - starting getValuesFromScheama...
+[2022-02-04 10:35:09,674 : INFO : rawValidation] - Extracted values from schema
+[2022-02-04 10:35:09,674 : INFO : rawValidation] - Entered to deleteExistingGoodDataDirectory function
+[2022-02-04 10:35:09,675 : INFO : rawValidation] - deleted Good data directory
+[2022-02-04 10:35:09,675 : INFO : rawValidation] - Entered to deleteExistingBadDataDirectory function
+[2022-02-04 10:35:09,675 : INFO : rawValidation] - deleted Bad data directory
+[2022-02-04 10:35:09,675 : INFO : rawValidation] - starting to create good and bad data directory..
+[2022-02-04 10:35:09,677 : INFO : rawValidation] - Created good new and bad data directory!
+[2022-02-04 10:35:09,677 : INFO : rawValidation] - stating column length validation...
+[2022-02-04 10:35:09,689 : DEBUG : rawValidation] - file Concrete_Data.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:35:09,702 : DEBUG : rawValidation] - file Concrete_Data_1.csv failed column number validation. file copied to bad data folder
+[2022-02-04 10:35:09,710 : DEBUG : rawValidation] - file Concrete_Data_2.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:35:09,719 : DEBUG : rawValidation] - file Concrete_Data_3.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:35:09,719 : INFO : rawValidation] - starting column names validation...
+[2022-02-04 10:35:09,745 : DEBUG : rawValidation] - file Concrete_Data.csv passed column name validation
+[2022-02-04 10:35:09,767 : DEBUG : rawValidation] - file Concrete_Data_2.csv failed column name validation at column number:4. file moved to bad data folder
+[2022-02-04 10:35:09,786 : DEBUG : rawValidation] - file Concrete_Data_3.csv passed column name validation
+[2022-02-04 10:35:09,786 : INFO : rawValidation] - started validating missing value in whole column...
+[2022-02-04 10:35:09,801 : DEBUG : rawValidation] - Concrete_Data.csv passed validation of missing value in all columns
+[2022-02-04 10:35:09,818 : DEBUG : rawValidation] - In Concrete_Data_3.csv column : Fly_Ash has all values missing. file moved to bad data folder
+[2022-02-04 10:35:21,090 : INFO : rawValidation] - Entered to deleteExistingGoodDataDirectory function
+[2022-02-04 10:35:21,092 : INFO : rawValidation] - deleted Good data directory
+[2022-02-04 10:35:21,110 : INFO : rawValidation] - Bad file moved to archive bad data folder
+[2022-02-04 10:35:21,111 : INFO : rawValidation] - bad data folder deleted succussfully
+[2022-02-04 10:35:21,111 : INFO : rawValidation] - Entered to deleteExistingBadDataDirectory function
+[2022-02-04 10:35:21,111 : INFO : rawValidation] - deleted Bad data directory
+[2022-02-04 10:38:24,691 : INFO : rawValidation] - starting getValuesFromScheama...
+[2022-02-04 10:38:24,691 : INFO : rawValidation] - Extracted values from schema
+[2022-02-04 10:38:24,691 : INFO : rawValidation] - Entered to deleteExistingGoodDataDirectory function
+[2022-02-04 10:38:24,691 : INFO : rawValidation] - deleted Good data directory
+[2022-02-04 10:38:24,691 : INFO : rawValidation] - Entered to deleteExistingBadDataDirectory function
+[2022-02-04 10:38:24,691 : INFO : rawValidation] - deleted Bad data directory
+[2022-02-04 10:38:24,691 : INFO : rawValidation] - starting to create good and bad data directory..
+[2022-02-04 10:38:24,692 : INFO : rawValidation] - Created good new and bad data directory!
+[2022-02-04 10:38:24,692 : INFO : rawValidation] - stating column length validation...
+[2022-02-04 10:38:24,706 : DEBUG : rawValidation] - file Concrete_Data.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:38:24,713 : DEBUG : rawValidation] - file Concrete_Data_1.csv failed column number validation. file copied to bad data folder
+[2022-02-04 10:38:24,721 : DEBUG : rawValidation] - file Concrete_Data_2.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:38:24,730 : DEBUG : rawValidation] - file Concrete_Data_3.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:38:24,731 : INFO : rawValidation] - starting column names validation...
+[2022-02-04 10:38:24,750 : DEBUG : rawValidation] - file Concrete_Data.csv passed column name validation
+[2022-02-04 10:38:24,771 : DEBUG : rawValidation] - file Concrete_Data_2.csv failed column name validation at column number:4. file moved to bad data folder
+[2022-02-04 10:38:24,788 : DEBUG : rawValidation] - file Concrete_Data_3.csv passed column name validation
+[2022-02-04 10:38:24,788 : INFO : rawValidation] - started validating missing value in whole column...
+[2022-02-04 10:38:24,798 : DEBUG : rawValidation] - Concrete_Data.csv passed validation of missing value in all columns
+[2022-02-04 10:38:24,809 : DEBUG : rawValidation] - In Concrete_Data_3.csv column : Fly_Ash has all values missing. file moved to bad data folder
+[2022-02-04 10:46:05,499 : INFO : rawValidation] - starting getValuesFromScheama...
+[2022-02-04 10:46:05,500 : INFO : rawValidation] - Extracted values from schema
+[2022-02-04 10:46:05,500 : INFO : rawValidation] - Entered to deleteExistingGoodDataDirectory function
+[2022-02-04 10:46:05,501 : INFO : rawValidation] - deleted Good data directory
+[2022-02-04 10:46:05,501 : INFO : rawValidation] - Entered to deleteExistingBadDataDirectory function
+[2022-02-04 10:46:05,504 : INFO : rawValidation] - deleted Bad data directory
+[2022-02-04 10:46:05,504 : INFO : rawValidation] - starting to create good and bad data directory..
+[2022-02-04 10:46:05,505 : INFO : rawValidation] - Created good new and bad data directory!
+[2022-02-04 10:46:05,506 : INFO : rawValidation] - stating column length validation...
+[2022-02-04 10:46:05,523 : DEBUG : rawValidation] - file Concrete_Data.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:46:05,531 : DEBUG : rawValidation] - file Concrete_Data_1.csv failed column number validation. file copied to bad data folder
+[2022-02-04 10:46:05,537 : DEBUG : rawValidation] - file Concrete_Data_2.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:46:05,544 : DEBUG : rawValidation] - file Concrete_Data_3.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:46:05,544 : INFO : rawValidation] - starting column names validation...
+[2022-02-04 10:46:05,561 : DEBUG : rawValidation] - file Concrete_Data.csv passed column name validation
+[2022-02-04 10:46:05,583 : DEBUG : rawValidation] - file Concrete_Data_2.csv failed column name validation at column number:4. file moved to bad data folder
+[2022-02-04 10:46:05,596 : DEBUG : rawValidation] - file Concrete_Data_3.csv passed column name validation
+[2022-02-04 10:46:05,596 : INFO : rawValidation] - started validating missing value in whole column...
+[2022-02-04 10:46:05,603 : DEBUG : rawValidation] - Concrete_Data.csv passed validation of missing value in all columns
+[2022-02-04 10:46:05,613 : DEBUG : rawValidation] - In Concrete_Data_3.csv column : Fly_Ash has all values missing. file moved to bad data folder
+[2022-02-04 10:46:19,310 : INFO : rawValidation] - Entered to deleteExistingGoodDataDirectory function
+[2022-02-04 10:46:19,312 : INFO : rawValidation] - deleted Good data directory
+[2022-02-04 10:46:19,334 : INFO : rawValidation] - Bad file moved to archive bad data folder
+[2022-02-04 10:46:19,336 : INFO : rawValidation] - bad data folder deleted succussfully
+[2022-02-04 10:46:19,336 : INFO : rawValidation] - Entered to deleteExistingBadDataDirectory function
+[2022-02-04 10:46:19,336 : INFO : rawValidation] - deleted Bad data directory
+[2022-02-04 10:56:20,175 : INFO : rawValidation] - starting getValuesFromScheama...
+[2022-02-04 10:56:20,175 : INFO : rawValidation] - Extracted values from schema
+[2022-02-04 10:56:20,175 : INFO : rawValidation] - Entered to deleteExistingGoodDataDirectory function
+[2022-02-04 10:56:20,175 : INFO : rawValidation] - deleted Good data directory
+[2022-02-04 10:56:20,175 : INFO : rawValidation] - Entered to deleteExistingBadDataDirectory function
+[2022-02-04 10:56:20,175 : INFO : rawValidation] - deleted Bad data directory
+[2022-02-04 10:56:20,176 : INFO : rawValidation] - starting to create good and bad data directory..
+[2022-02-04 10:56:20,177 : INFO : rawValidation] - Created good new and bad data directory!
+[2022-02-04 10:56:20,177 : INFO : rawValidation] - stating column length validation...
+[2022-02-04 10:56:20,193 : DEBUG : rawValidation] - file Concrete_Data.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:56:20,206 : DEBUG : rawValidation] - file Concrete_Data_1.csv failed column number validation. file copied to bad data folder
+[2022-02-04 10:56:20,212 : DEBUG : rawValidation] - file Concrete_Data_2.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:56:20,221 : DEBUG : rawValidation] - file Concrete_Data_3.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 10:56:20,221 : INFO : rawValidation] - starting column names validation...
+[2022-02-04 10:56:20,241 : DEBUG : rawValidation] - file Concrete_Data.csv passed column name validation
+[2022-02-04 10:56:20,268 : DEBUG : rawValidation] - file Concrete_Data_2.csv failed column name validation at column number:4. file moved to bad data folder
+[2022-02-04 10:56:20,289 : DEBUG : rawValidation] - file Concrete_Data_3.csv passed column name validation
+[2022-02-04 10:56:20,289 : INFO : rawValidation] - started validating missing value in whole column...
+[2022-02-04 10:56:20,296 : DEBUG : rawValidation] - Concrete_Data.csv passed validation of missing value in all columns
+[2022-02-04 10:56:20,310 : DEBUG : rawValidation] - In Concrete_Data_3.csv column : Fly_Ash has all values missing. file moved to bad data folder
+[2022-02-04 10:56:38,472 : INFO : rawValidation] - Entered to deleteExistingGoodDataDirectory function
+[2022-02-04 10:56:38,474 : INFO : rawValidation] - deleted Good data directory
+[2022-02-04 10:56:38,506 : INFO : rawValidation] - Bad file moved to archive bad data folder
+[2022-02-04 10:56:38,507 : INFO : rawValidation] - bad data folder deleted succussfully
+[2022-02-04 10:56:38,507 : INFO : rawValidation] - Entered to deleteExistingBadDataDirectory function
+[2022-02-04 10:56:38,507 : INFO : rawValidation] - deleted Bad data directory
+[2022-02-04 11:00:24,989 : INFO : rawValidation] - starting getValuesFromScheama...
+[2022-02-04 11:00:24,989 : INFO : rawValidation] - Extracted values from schema
+[2022-02-04 11:00:24,989 : INFO : rawValidation] - Entered to deleteExistingGoodDataDirectory function
+[2022-02-04 11:00:24,990 : INFO : rawValidation] - deleted Good data directory
+[2022-02-04 11:00:24,990 : INFO : rawValidation] - Entered to deleteExistingBadDataDirectory function
+[2022-02-04 11:00:24,990 : INFO : rawValidation] - deleted Bad data directory
+[2022-02-04 11:00:24,990 : INFO : rawValidation] - starting to create good and bad data directory..
+[2022-02-04 11:00:24,991 : INFO : rawValidation] - Created good new and bad data directory!
+[2022-02-04 11:00:24,991 : INFO : rawValidation] - stating column length validation...
+[2022-02-04 11:00:25,009 : DEBUG : rawValidation] - file Concrete_Data.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 11:00:25,022 : DEBUG : rawValidation] - file Concrete_Data_1.csv failed column number validation. file copied to bad data folder
+[2022-02-04 11:00:25,028 : DEBUG : rawValidation] - file Concrete_Data_2.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 11:00:25,038 : DEBUG : rawValidation] - file Concrete_Data_3.csv succeeded column number validation. file copied to bad good data folder
+[2022-02-04 11:00:25,038 : INFO : rawValidation] - starting column names validation...
+[2022-02-04 11:00:25,056 : DEBUG : rawValidation] - file Concrete_Data.csv passed column name validation
+[2022-02-04 11:00:25,075 : DEBUG : rawValidation] - file Concrete_Data_2.csv failed column name validation at column number:4. file moved to bad data folder
+[2022-02-04 11:00:25,091 : DEBUG : rawValidation] - file Concrete_Data_3.csv passed column name validation
+[2022-02-04 11:00:25,092 : INFO : rawValidation] - started validating missing value in whole column...
+[2022-02-04 11:00:25,103 : DEBUG : rawValidation] - Concrete_Data.csv passed validation of missing value in all columns
+[2022-02-04 11:00:25,123 : DEBUG : rawValidation] - In Concrete_Data_3.csv column : Fly_Ash has all values missing. file moved to bad data folder
+[2022-02-04 11:00:37,861 : INFO : rawValidation] - Entered to deleteExistingGoodDataDirectory function
+[2022-02-04 11:00:37,863 : INFO : rawValidation] - deleted Good data directory
+[2022-02-04 11:00:37,927 : INFO : rawValidation] - Bad file moved to archive bad data folder
+[2022-02-04 11:00:37,928 : INFO : rawValidation] - bad data folder deleted succussfully
+[2022-02-04 11:00:37,928 : INFO : rawValidation] - Entered to deleteExistingBadDataDirectory function
+[2022-02-04 11:00:37,929 : INFO : rawValidation] - deleted Bad data directory

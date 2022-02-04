@@ -35,6 +35,12 @@ class Train_Validation:
             self.dboperation.createTableDb("Training", columnNames)
             logger.info("Table creation completed")
 
+            # delete existing content in table before adding new data
+            # Remove this 2 line of code if the data flow is continuous
+            # and being replaced by new data. Else keep this line
+            self.dboperation.deleteTableContentFromDB("Training")
+            logger.info("Deleted table content from db before adding new data")
+
             self.dboperation.insertIntoTableGoodData("Training")
             logger.info("csv data inserted into database table")
 

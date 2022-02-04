@@ -5,7 +5,6 @@ import flask_monitoringdashboard as dashboard
 import os
 from trainingValidationInsertion import Train_Validation
 
-
 os.putenv("LANG", "en_US.UTF-8")
 os.putenv("LC_ALL", "en_US.UTF-8")
 
@@ -37,7 +36,7 @@ def trainModel():
                 train_validation.training_data_validation()
 
                 """model training goes here"""
-                output = "training data validation completed"
+                output = "Data base insertion completed"
                 return jsonify(output)
                 # return render_template('index.html')
         else:

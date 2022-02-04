@@ -227,3 +227,55 @@ AttributeError: 'Logger' object has no attribute 'ingo'
 [2022-02-04 01:02:26,611 : INFO : trainingValidationInsertion] - Deleted good data folder
 [2022-02-04 01:02:26,644 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
 [2022-02-04 01:02:26,765 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-04 10:31:38,023 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-04 10:31:38,168 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-04 10:31:38,171 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-04 10:31:38,172 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-04 10:31:56,614 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-04 10:31:56,616 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-04 10:31:56,649 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-04 10:31:56,767 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-04 10:35:09,673 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-04 10:35:09,818 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-04 10:35:09,821 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-04 10:35:09,822 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-04 10:35:21,090 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-04 10:35:21,092 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-04 10:35:21,111 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-04 10:35:21,153 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-04 10:38:24,690 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-04 10:38:24,809 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-04 10:38:24,814 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-04 10:38:24,818 : ERROR : trainingValidationInsertion] - Error during training data validation : 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\trainingValidationInsertion.py", line 41, in training_data_validation
+    self.dboperation.deleteTableContentFromDB("Training")
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 103, in deleteTableContentFromDB
+    raise e
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 94, in deleteTableContentFromDB
+    if c.fetchone()[0] != 1:  # table is not empty
+TypeError: 'NoneType' object is not subscriptable
+[2022-02-04 10:46:05,498 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-04 10:46:05,614 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-04 10:46:05,619 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-04 10:46:05,620 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-04 10:46:19,310 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-04 10:46:19,312 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-04 10:46:19,336 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-04 10:46:19,527 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-04 10:56:20,174 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-04 10:56:20,310 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-04 10:56:20,313 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-04 10:56:20,327 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-04 10:56:38,472 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-04 10:56:38,474 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-04 10:56:38,507 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-04 10:56:38,526 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-04 11:00:24,988 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-04 11:00:25,123 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-04 11:00:25,128 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-04 11:00:25,141 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-04 11:00:37,861 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-04 11:00:37,863 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-04 11:00:37,928 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-04 11:00:37,960 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
