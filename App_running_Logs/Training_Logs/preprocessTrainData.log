@@ -4,3 +4,29 @@
 [2022-02-08 12:33:34,827 : INFO : preprocessTraindata] - found null values in 0 columns
 [2022-02-08 12:41:57,105 : INFO : preprocessTraindata] - found null values in 3 columns
 [2022-02-08 12:44:04,664 : INFO : preprocessTraindata] - found null values in 3 columns
+[2022-02-08 21:37:24,691 : INFO : preprocessTraindata] - found null values in 3 columns
+[2022-02-08 21:37:24,724 : INFO : preprocessTraindata] - imputed all missing value in the data
+[2022-02-08 22:57:44,342 : INFO : preprocessTraindata] - found null values in 0 columns
+[2022-02-08 22:57:44,357 : INFO : preprocessTraindata] - imputed all missing value in the data
+[2022-02-08 22:57:44,366 : INFO : preprocessTraindata] - data saparated to features and labels
+[2022-02-08 23:08:02,537 : INFO : preprocessTraindata] - found null values in 0 columns
+[2022-02-08 23:08:02,569 : INFO : preprocessTraindata] - imputed all missing value in the data
+[2022-02-08 23:08:02,571 : INFO : preprocessTraindata] - data saparated to features and labels
+[2022-02-08 23:58:49,584 : INFO : preprocessTraindata] - found null values in 0 columns
+[2022-02-08 23:58:49,603 : INFO : preprocessTraindata] - imputed all missing value in the data
+[2022-02-08 23:58:49,605 : INFO : preprocessTraindata] - data saparated to features and labels
+[2022-02-09 00:05:58,784 : INFO : preprocessTraindata] - found null values in 0 columns
+[2022-02-09 00:05:58,796 : INFO : preprocessTraindata] - imputed all missing value in the data
+[2022-02-09 00:05:58,798 : INFO : preprocessTraindata] - data saparated to features and labels
+[2022-02-09 00:06:31,340 : INFO : preprocessTraindata] - found null values in 0 columns
+[2022-02-09 00:06:31,354 : INFO : preprocessTraindata] - imputed all missing value in the data
+[2022-02-09 00:06:31,356 : INFO : preprocessTraindata] - data saparated to features and labels
+[2022-02-09 00:36:55,814 : INFO : preprocessTraindata] - found null values in 0 columns
+[2022-02-09 00:36:55,825 : INFO : preprocessTraindata] - imputed all missing value in the data
+[2022-02-09 00:36:55,832 : INFO : preprocessTraindata] - data saparated to features and labels
+[2022-02-09 00:37:04,704 : INFO : preprocessTraindata] - standered cluster data, scaler_2 scaler saved in directory
+[2022-02-09 00:37:04,723 : INFO : preprocessTraindata] - standered cluster data, None scaler saved in directory
+[2022-02-09 00:37:04,786 : INFO : preprocessTraindata] - standered cluster data, scaler_0 scaler saved in directory
+[2022-02-09 00:37:04,806 : INFO : preprocessTraindata] - standered cluster data, None scaler saved in directory
+[2022-02-09 00:37:04,906 : INFO : preprocessTraindata] - standered cluster data, scaler_1 scaler saved in directory
+[2022-02-09 00:37:04,935 : INFO : preprocessTraindata] - standered cluster data, None scaler saved in directory

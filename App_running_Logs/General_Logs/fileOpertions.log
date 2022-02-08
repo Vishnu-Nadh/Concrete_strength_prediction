@@ -1,0 +1,6 @@
+[2022-02-08 23:59:02,289 : INFO : fileOperations] - model KMeans saved to model directory
+[2022-02-09 00:06:38,393 : INFO : fileOperations] - model KMeans saved to model directory
+[2022-02-09 00:37:04,637 : INFO : fileOperations] - model KMeans saved to model directory
+[2022-02-09 00:37:04,696 : INFO : fileOperations] - scaler scaler_2 saved to scaler directory
+[2022-02-09 00:37:04,776 : INFO : fileOperations] - scaler scaler_0 saved to scaler directory
+[2022-02-09 00:37:04,895 : INFO : fileOperations] - scaler scaler_1 saved to scaler directory

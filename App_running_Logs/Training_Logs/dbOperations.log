@@ -181,3 +181,67 @@ sqlite3.ProgrammingError: Cannot operate on a closed database.
 [2022-02-08 12:44:04,510 : INFO : dbOperations] - Concrete_Data_4.csv added to database table
 [2022-02-08 12:44:04,547 : INFO : dbOperations] - opened database Training succussfully
 [2022-02-08 12:44:04,610 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-08 21:37:24,293 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-08 21:37:24,303 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 21:37:24,306 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-08 21:37:24,307 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 21:37:24,325 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-08 21:37:24,341 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 21:37:24,404 : INFO : dbOperations] - Concrete_Data.csv added to database table
+[2022-02-08 21:37:24,467 : INFO : dbOperations] - Concrete_Data_4.csv added to database table
+[2022-02-08 21:37:24,570 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 21:37:24,635 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-08 22:57:43,606 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-08 22:57:43,707 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 22:57:43,708 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-08 22:57:43,820 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 22:57:43,909 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-08 22:57:43,920 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 22:57:44,026 : INFO : dbOperations] - Concrete_Data.csv added to database table
+[2022-02-08 22:57:44,110 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 22:57:44,186 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-08 23:08:02,103 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-08 23:08:02,110 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 23:08:02,111 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-08 23:08:02,115 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 23:08:02,139 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-08 23:08:02,151 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 23:08:02,205 : INFO : dbOperations] - Concrete_Data.csv added to database table
+[2022-02-08 23:08:02,411 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 23:08:02,437 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-08 23:58:49,253 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-08 23:58:49,261 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 23:58:49,262 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-08 23:58:49,263 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 23:58:49,344 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-08 23:58:49,355 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 23:58:49,446 : INFO : dbOperations] - Concrete_Data.csv added to database table
+[2022-02-08 23:58:49,529 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 23:58:49,561 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-09 00:05:58,390 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-09 00:05:58,397 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-09 00:05:58,401 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-09 00:05:58,402 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-09 00:05:58,443 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-09 00:05:58,453 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-09 00:05:58,588 : INFO : dbOperations] - Concrete_Data.csv added to database table
+[2022-02-09 00:05:58,691 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-09 00:05:58,725 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-09 00:06:31,071 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-09 00:06:31,074 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-09 00:06:31,075 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-09 00:06:31,076 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-09 00:06:31,142 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-09 00:06:31,160 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-09 00:06:31,207 : INFO : dbOperations] - Concrete_Data.csv added to database table
+[2022-02-09 00:06:31,288 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-09 00:06:31,313 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-09 00:36:55,424 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-09 00:36:55,438 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-09 00:36:55,439 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-09 00:36:55,440 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-09 00:36:55,503 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-09 00:36:55,509 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-09 00:36:55,623 : INFO : dbOperations] - Concrete_Data.csv added to database table
+[2022-02-09 00:36:55,720 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-09 00:36:55,751 : INFO : dbOperations] - Data base table exported to csv succussfully

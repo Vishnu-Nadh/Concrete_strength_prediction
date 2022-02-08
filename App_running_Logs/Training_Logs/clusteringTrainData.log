@@ -1,0 +1,20 @@
+[2022-02-08 22:57:49,913 : ERROR : clustering] - x and y must have same first dimension, but have shapes (10,) and (1,)
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\clustering\clustering.py", line 40, in createElbowPlot
+    range(1, 11), wcss
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\matplotlib\pyplot.py", line 2842, in plot
+    **({"data": data} if data is not None else {}), **kwargs)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\matplotlib\axes\_axes.py", line 1743, in plot
+    lines = [*self._get_lines(*args, data=data, **kwargs)]
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\matplotlib\axes\_base.py", line 273, in __call__
+    yield from self._plot_args(this, kwargs)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\matplotlib\axes\_base.py", line 399, in _plot_args
+    raise ValueError(f"x and y must have same first dimension, but "
+ValueError: x and y must have same first dimension, but have shapes (10,) and (1,)
+[2022-02-08 23:08:09,452 : INFO : clustering] - optimum number of clusters found as 3 and elbow curve plotted
+[2022-02-08 23:59:01,787 : INFO : clustering] - optimum number of clusters found as 3 and elbow curve plotted
+[2022-02-08 23:59:02,290 : INFO : clustering] - Created 3 clusters. model saved to model directory
+[2022-02-09 00:06:38,250 : INFO : clustering] - optimum number of clusters found as 3 and elbow curve plotted
+[2022-02-09 00:06:38,394 : INFO : clustering] - Created 3 clusters. model saved to model directory
+[2022-02-09 00:37:04,321 : INFO : clustering] - optimum number of clusters found as 3 and elbow curve plotted
+[2022-02-09 00:37:04,639 : INFO : clustering] - Created 3 clusters. model saved to model directory

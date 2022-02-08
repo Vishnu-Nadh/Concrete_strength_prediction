@@ -86,3 +86,59 @@ sqlite3.ProgrammingError: Cannot operate on a closed database.
 [2022-02-08 12:44:04,513 : INFO : trainingValidationInsertion] - Deleted good data folder
 [2022-02-08 12:44:04,544 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
 [2022-02-08 12:44:04,616 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-08 21:37:23,893 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-08 21:37:24,293 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-08 21:37:24,306 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-08 21:37:24,325 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-08 21:37:24,484 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-08 21:37:24,504 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-08 21:37:24,561 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-08 21:37:24,636 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-08 22:57:43,076 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-08 22:57:43,605 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-08 22:57:43,708 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-08 22:57:43,909 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-08 22:57:44,039 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-08 22:57:44,046 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-08 22:57:44,106 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-08 22:57:44,251 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-08 23:08:01,853 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-08 23:08:02,103 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-08 23:08:02,112 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-08 23:08:02,145 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-08 23:08:02,213 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-08 23:08:02,217 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-08 23:08:02,366 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-08 23:08:02,462 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-08 23:58:48,890 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-08 23:58:49,253 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-08 23:58:49,262 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-08 23:58:49,345 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-08 23:58:49,457 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-08 23:58:49,473 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-08 23:58:49,525 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-08 23:58:49,562 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-09 00:05:58,111 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-09 00:05:58,389 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-09 00:05:58,401 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-09 00:05:58,443 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-09 00:05:58,605 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-09 00:05:58,608 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-09 00:05:58,676 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-09 00:05:58,729 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-09 00:06:30,797 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-09 00:06:31,070 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-09 00:06:31,075 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-09 00:06:31,142 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-09 00:06:31,209 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-09 00:06:31,218 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-09 00:06:31,278 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-09 00:06:31,316 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-09 00:36:55,095 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-09 00:36:55,423 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-09 00:36:55,439 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-09 00:36:55,503 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-09 00:36:55,636 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-09 00:36:55,639 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-09 00:36:55,713 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-09 00:36:55,752 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully

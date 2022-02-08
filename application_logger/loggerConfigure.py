@@ -13,6 +13,8 @@ def configure_logger(logger, logfile_name, log_level=logging.DEBUG):
     os.makedirs(trainlog_dir, exist_ok=True)
     predictionlog_dir = os.path.join(logging_dir, "Prediction_Logs")
     os.makedirs(predictionlog_dir, exist_ok=True)
+    generallog_dir = os.path.join(logging_dir, "General_Logs")
+    os.makedirs(generallog_dir, exist_ok=True)
 
     logging_file = os.path.join(logging_dir, logfile_name)
     file_handler = logging.FileHandler(logging_file)
