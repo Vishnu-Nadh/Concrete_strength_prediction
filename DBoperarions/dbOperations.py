@@ -1,13 +1,15 @@
+from operator import index
 import sqlite3
 import os
 import shutil
 import csv
+import pandas as pd
 import logging
 from application_logger.loggerConfigure import configure_logger
 
 
 logger = logging.getLogger(__name__)
-logger = configure_logger(logger, "dbOperations.log")
+logger = configure_logger(logger, "Training_Logs/dbOperations.log")
 
 
 class DB_operations:
@@ -111,27 +113,14 @@ class DB_operations:
         files = os.listdir(goodFilePath)
         for file in files:
             try:
-                with open(os.path.join(goodFilePath, file), "r") as f:
-                    next(f)
-                    reader = csv.reader(f, delimiter="\n")
-                    for line in enumerate(reader):
-                        for list in line[1]:
-                            try:
-                                conn.execute(
-                                    "INSERT INTO Good_Raw_Data values ({values})".format(
-                                        values=(list)
-                                    )
-                                )
-                                conn.commit()
-
-                            except Exception as e:
-                                logger.exception(f"{e}")
-                                raise e
-
-                logger.info(f"{file} values inserted into table")
+                filepath = os.path.join(goodFilePath, file)
+                data = pd.read_csv(filepath)
+                data.to_sql("Good_Raw_Data", conn, if_exists="append", index=False)
+                conn.commit()
+                logger.info(f"{file} added to database table")
 
             except Exception as e:
-                conn.rollback()
+                # conn.rollback()
                 logger.exception(f"error while inserting data into table: {e}")
                 shutil.move(os.path.join(goodFilePath, file), badFilePath)
                 logger.info(f"file {file} moved to bad data directory")

@@ -8,7 +8,7 @@ from datetime import datetime
 from application_logger.loggerConfigure import configure_logger
 
 logger = logging.getLogger(__name__)
-logger = configure_logger(logger, "rawValidation.log")
+logger = configure_logger(logger, "Training_Logs/rawValidation.log")
 
 
 class RawData_Validation:

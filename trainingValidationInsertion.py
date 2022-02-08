@@ -5,7 +5,7 @@ import logging
 import os
 
 logger = logging.getLogger(__name__)
-logger = configure_logger(logger, "trainingValidationInsertion.log")
+logger = configure_logger(logger, "Training_Logs/trainingValidationInsertion.log")
 
 
 class Train_Validation:

@@ -4,6 +4,7 @@ from flask_cors import cross_origin, CORS
 import flask_monitoringdashboard as dashboard
 import os
 from trainingValidationInsertion import Train_Validation
+from trainingModel import Train_Model
 
 os.putenv("LANG", "en_US.UTF-8")
 os.putenv("LC_ALL", "en_US.UTF-8")
@@ -36,7 +37,10 @@ def trainModel():
                 train_validation.training_data_validation()
 
                 """model training goes here"""
-                output = "Data base insertion completed"
+                trainmodel = Train_Model()
+                trainmodel.trainModel()
+
+                output = "Model training Completed"
                 return jsonify(output)
                 # return render_template('index.html')
         else:

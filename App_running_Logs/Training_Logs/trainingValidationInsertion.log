@@ -1,0 +1,88 @@
+[2022-02-04 12:25:25,360 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-04 12:25:25,518 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-04 12:25:25,524 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-04 12:25:25,543 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-04 12:25:44,713 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-04 12:25:44,715 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-04 12:25:44,747 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-04 12:25:44,772 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-06 23:27:43,261 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-06 23:27:43,701 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-06 23:27:43,712 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-06 23:27:43,732 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-06 23:28:38,009 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-06 23:28:38,056 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-06 23:28:38,502 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-06 23:28:38,629 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-06 23:48:04,936 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-06 23:48:05,408 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-06 23:48:05,458 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-06 23:48:05,535 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-06 23:48:48,370 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-06 23:48:48,371 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-06 23:48:48,450 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-06 23:48:48,482 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-08 12:29:50,885 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-08 12:29:51,095 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-08 12:29:51,098 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-08 12:29:51,110 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-08 12:29:51,258 : ERROR : trainingValidationInsertion] - Error during training data validation : Cannot operate on a closed database.
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 118, in insertIntoTableGoodData
+    data.to_sql("Good_Raw_Data", conn, if_exists="append")
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\core\generic.py", line 2615, in to_sql
+    method=method,
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 598, in to_sql
+    method=method,
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1827, in to_sql
+    table.create()
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 721, in create
+    if self.exists():
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 708, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1838, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1679, in execute
+    cur = self.con.cursor()
+sqlite3.ProgrammingError: Cannot operate on a closed database.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\trainingValidationInsertion.py", line 44, in training_data_validation
+    self.dboperation.insertIntoTableGoodData("Training")
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 122, in insertIntoTableGoodData
+    conn.rollback()
+sqlite3.ProgrammingError: Cannot operate on a closed database.
+[2022-02-08 12:31:03,550 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-08 12:31:03,726 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-08 12:31:03,733 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-08 12:31:03,743 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-08 12:31:03,892 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-08 12:31:03,893 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-08 12:31:03,953 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-08 12:31:03,968 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-08 12:33:34,376 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-08 12:33:34,547 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-08 12:33:34,555 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-08 12:33:34,563 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-08 12:33:34,733 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-08 12:33:34,743 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-08 12:33:34,799 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-08 12:33:34,811 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-08 12:41:56,485 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-08 12:41:56,674 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-08 12:41:56,679 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-08 12:41:56,692 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-08 12:41:56,853 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-08 12:41:56,856 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-08 12:41:56,886 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-08 12:41:56,967 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-08 12:44:04,107 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-08 12:44:04,387 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-08 12:44:04,394 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-08 12:44:04,403 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-08 12:44:04,511 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-08 12:44:04,513 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-08 12:44:04,544 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-08 12:44:04,616 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully

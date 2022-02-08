@@ -1,9 +1,0 @@
-[2022-02-04 11:00:25,123 : INFO : dbOperations] - entered to create tabledb method
-[2022-02-04 11:00:25,127 : INFO : dbOperations] - opened database Training succussfully
-[2022-02-04 11:00:25,127 : INFO : dbOperations] - Table created succussfully and database closed
-[2022-02-04 11:00:25,128 : INFO : dbOperations] - opened database Training succussfully
-[2022-02-04 11:00:25,141 : INFO : dbOperations] - deleted all data from table before adding new data
-[2022-02-04 11:00:25,142 : INFO : dbOperations] - opened database Training succussfully
-[2022-02-04 11:00:37,860 : INFO : dbOperations] - Concrete_Data.csv values inserted into table
-[2022-02-04 11:00:37,936 : INFO : dbOperations] - opened database Training succussfully
-[2022-02-04 11:00:37,959 : INFO : dbOperations] - Data base table exported to csv succussfully

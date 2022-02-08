@@ -1,0 +1,183 @@
+[2022-02-04 12:25:25,519 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-04 12:25:25,522 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-04 12:25:25,523 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-04 12:25:25,524 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-04 12:25:25,542 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-04 12:25:25,546 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-04 12:25:44,712 : INFO : dbOperations] - Concrete_Data.csv values inserted into table
+[2022-02-04 12:25:44,753 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-04 12:25:44,771 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-06 23:27:43,707 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-06 23:27:43,711 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-06 23:27:43,712 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-06 23:27:43,713 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-06 23:27:43,732 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-06 23:27:43,744 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-06 23:28:37,899 : INFO : dbOperations] - Concrete_Data.csv values inserted into table
+[2022-02-06 23:28:37,983 : ERROR : dbOperations] - near ",": syntax error
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 122, in insertIntoTableGoodData
+    values=(list)
+sqlite3.OperationalError: near ",": syntax error
+[2022-02-06 23:28:37,985 : ERROR : dbOperations] - error while inserting data into table: near ",": syntax error
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 129, in insertIntoTableGoodData
+    raise e
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 122, in insertIntoTableGoodData
+    values=(list)
+sqlite3.OperationalError: near ",": syntax error
+[2022-02-06 23:28:37,994 : INFO : dbOperations] - file Concrete_Data_4.csv moved to bad data directory
+[2022-02-06 23:28:38,601 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-06 23:28:38,628 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-06 23:48:05,408 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-06 23:48:05,456 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-06 23:48:05,458 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-06 23:48:05,470 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-06 23:48:05,535 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-06 23:48:05,539 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-06 23:48:48,348 : INFO : dbOperations] - Concrete_Data.csv values inserted into table
+[2022-02-06 23:48:48,363 : ERROR : dbOperations] - near ",": syntax error
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 122, in insertIntoTableGoodData
+    values=(list)
+sqlite3.OperationalError: near ",": syntax error
+[2022-02-06 23:48:48,363 : ERROR : dbOperations] - error while inserting data into table: near ",": syntax error
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 129, in insertIntoTableGoodData
+    raise e
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 122, in insertIntoTableGoodData
+    values=(list)
+sqlite3.OperationalError: near ",": syntax error
+[2022-02-06 23:48:48,368 : INFO : dbOperations] - file Concrete_Data_4.csv moved to bad data directory
+[2022-02-06 23:48:48,453 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-06 23:48:48,474 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-08 12:29:51,095 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-08 12:29:51,098 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:29:51,098 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-08 12:29:51,099 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:29:51,110 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-08 12:29:51,115 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:29:51,165 : ERROR : dbOperations] - error while inserting data into table: table Good_Raw_Data has no column named index
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 118, in insertIntoTableGoodData
+    data.to_sql("Good_Raw_Data", conn, if_exists="append")
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\core\generic.py", line 2615, in to_sql
+    method=method,
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 598, in to_sql
+    method=method,
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1828, in to_sql
+    table.insert(chunksize, method)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 830, in insert
+    exec_insert(conn, keys, chunk_iter)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1555, in _execute_insert
+    conn.executemany(self.insert_statement(num_rows=1), data_list)
+sqlite3.OperationalError: table Good_Raw_Data has no column named index
+[2022-02-08 12:29:51,223 : INFO : dbOperations] - file Concrete_Data.csv moved to bad data directory
+[2022-02-08 12:31:03,726 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-08 12:31:03,731 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:31:03,733 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-08 12:31:03,734 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:31:03,742 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-08 12:31:03,743 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:31:03,800 : ERROR : dbOperations] - error while inserting data into table: table Good_Raw_Data has no column named index
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 118, in insertIntoTableGoodData
+    data.to_sql("Good_Raw_Data", conn, if_exists="append")
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\core\generic.py", line 2615, in to_sql
+    method=method,
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 598, in to_sql
+    method=method,
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1828, in to_sql
+    table.insert(chunksize, method)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 830, in insert
+    exec_insert(conn, keys, chunk_iter)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1555, in _execute_insert
+    conn.executemany(self.insert_statement(num_rows=1), data_list)
+sqlite3.OperationalError: table Good_Raw_Data has no column named index
+[2022-02-08 12:31:03,824 : INFO : dbOperations] - file Concrete_Data.csv moved to bad data directory
+[2022-02-08 12:31:03,874 : ERROR : dbOperations] - error while inserting data into table: Cannot operate on a closed database.
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 118, in insertIntoTableGoodData
+    data.to_sql("Good_Raw_Data", conn, if_exists="append")
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\core\generic.py", line 2615, in to_sql
+    method=method,
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 598, in to_sql
+    method=method,
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1827, in to_sql
+    table.create()
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 721, in create
+    if self.exists():
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 708, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1838, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1679, in execute
+    cur = self.con.cursor()
+sqlite3.ProgrammingError: Cannot operate on a closed database.
+[2022-02-08 12:31:03,892 : INFO : dbOperations] - file Concrete_Data_4.csv moved to bad data directory
+[2022-02-08 12:31:03,957 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:31:03,967 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-08 12:33:34,547 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-08 12:33:34,549 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:33:34,554 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-08 12:33:34,556 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:33:34,563 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-08 12:33:34,564 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:33:34,639 : ERROR : dbOperations] - error while inserting data into table: table Good_Raw_Data has no column named index
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 118, in insertIntoTableGoodData
+    data.to_sql("Good_Raw_Data", conn, if_exists="append")
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\core\generic.py", line 2615, in to_sql
+    method=method,
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 598, in to_sql
+    method=method,
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1828, in to_sql
+    table.insert(chunksize, method)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 830, in insert
+    exec_insert(conn, keys, chunk_iter)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1555, in _execute_insert
+    conn.executemany(self.insert_statement(num_rows=1), data_list)
+sqlite3.OperationalError: table Good_Raw_Data has no column named index
+[2022-02-08 12:33:34,658 : INFO : dbOperations] - file Concrete_Data.csv moved to bad data directory
+[2022-02-08 12:33:34,727 : ERROR : dbOperations] - error while inserting data into table: Cannot operate on a closed database.
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\DBoperarions\dbOperations.py", line 118, in insertIntoTableGoodData
+    data.to_sql("Good_Raw_Data", conn, if_exists="append")
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\core\generic.py", line 2615, in to_sql
+    method=method,
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 598, in to_sql
+    method=method,
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1827, in to_sql
+    table.create()
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 721, in create
+    if self.exists():
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 708, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1838, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\pandas\io\sql.py", line 1679, in execute
+    cur = self.con.cursor()
+sqlite3.ProgrammingError: Cannot operate on a closed database.
+[2022-02-08 12:33:34,733 : INFO : dbOperations] - file Concrete_Data_4.csv moved to bad data directory
+[2022-02-08 12:33:34,809 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:33:34,810 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-08 12:41:56,675 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-08 12:41:56,678 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:41:56,678 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-08 12:41:56,679 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:41:56,692 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-08 12:41:56,701 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:41:56,778 : INFO : dbOperations] - Concrete_Data.csv added to database table
+[2022-02-08 12:41:56,852 : INFO : dbOperations] - Concrete_Data_4.csv added to database table
+[2022-02-08 12:41:56,888 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:41:56,957 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-08 12:44:04,388 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-08 12:44:04,394 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:44:04,394 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-08 12:44:04,395 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:44:04,403 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-08 12:44:04,404 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:44:04,459 : INFO : dbOperations] - Concrete_Data.csv added to database table
+[2022-02-08 12:44:04,510 : INFO : dbOperations] - Concrete_Data_4.csv added to database table
+[2022-02-08 12:44:04,547 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-08 12:44:04,610 : INFO : dbOperations] - Data base table exported to csv succussfully
