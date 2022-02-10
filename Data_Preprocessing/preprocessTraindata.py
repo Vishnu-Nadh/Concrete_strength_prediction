@@ -1,8 +1,10 @@
 from ast import Try
+import imp
 import logging
 from re import X
 from sklearn.impute import KNNImputer
 from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
 import pickle
@@ -88,12 +90,46 @@ class Preprocessor:
                 # SAVING SCALER FOR PREDICTION DATA
                 fileop = File_Operations()
                 fileop.saveScaler(scaler, filename)
-                
-            X = scaler.fit_transform(X)
-            logger.info(f"standered cluster data, {filename} scaler saved in directory")
+                logger.info(f"{filename} scaler saved in directory")
+
+            X_tr = pd.DataFrame(scaler.fit_transform(X), columns=X.columns)
+            logger.info("training data is scaled using standered scaler")
+                    
+            return X_tr    
             
-            return X    
+        except Exception as e:
+            logger.exception(f"{e}")
+            raise e
+        
+    def LogTransformData(self, data):
+        """this method apply the log transformation to the data passed in 
+        returns : logarithmic transformed data
+
+        Args:
+            data (dataframe): input data of features
+        """
+        try:
+            data_transformed = data.apply(lambda x:np.log1p(x), axis=1)
+            logger.info("applied logarithamic transformation to the data") 
+            return data_transformed
+        
+        except Exception as e:
+            logger.exception(f"Error while logarithmic transformation {e}")    
+            raise e
+        
+    def trainTestSplitData(self, X, y):
+        """this function do the train test split of the d=given features and labels
+
+        Args:
+            X (dataframe): features data
+            y (dataframe): labels data
             
+        """
+        try:
+            x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=100)
+            logger.info("data splitted to train and test data sets")
+            return x_train, x_test, y_train, y_test
+        
         except Exception as e:
             logger.exception(f"{e}")
             raise e

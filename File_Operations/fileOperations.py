@@ -37,7 +37,7 @@ class File_Operations:
             else:
                 os.makedirs(path)
 
-            with open(path + "/" + filename + ".sav", "wb") as f:
+            with open(path + "/" + filename + ".pickle", "wb") as f:
                 pickle.dump(model, f)  # save the model to file
 
             self.logger.info(f"model {filename} saved to model directory")
@@ -77,3 +77,25 @@ class File_Operations:
         except Exception as e:
             self.logger.exception(f"{e}")
             raise e
+
+    def loadModel(self, model_name):
+        """this method load the model for prediction from the saved location of pickle file
+
+        Args:
+            model_name (string): model name 
+        """
+        
+        try:
+            
+            file_path = os.path.join(self.model_dir + model_name, model_name + ".pickle")
+            model = pickle.load(open(file_path, "rb"))
+            logger.info("loaded model from saved pickle format")
+            
+            return model
+        
+        except Exception as e:
+            logger.exception(f"{e}")
+            pass
+        
+            raise e
+                     

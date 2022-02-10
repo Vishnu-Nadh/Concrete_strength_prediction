@@ -1,35 +1,6 @@
-[2022-02-08 22:57:44,358 : INFO : trainingModel] - imputed all missing values in data
-[2022-02-08 22:57:44,366 : INFO : trainingModel] - data features and labels saperated
-[2022-02-08 22:57:49,924 : ERROR : trainingModel] - ERROR occured: x and y must have same first dimension, but have shapes (10,) and (1,)
-Traceback (most recent call last):
-  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\trainingModel.py", line 38, in trainModel
-    number_of_clusters = kmeans.createElbowPlot(X)
-  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\clustering\clustering.py", line 59, in createElbowPlot
-    raise e
-  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\clustering\clustering.py", line 40, in createElbowPlot
-    range(1, 11), wcss
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\matplotlib\pyplot.py", line 2842, in plot
-    **({"data": data} if data is not None else {}), **kwargs)
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\matplotlib\axes\_axes.py", line 1743, in plot
-    lines = [*self._get_lines(*args, data=data, **kwargs)]
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\matplotlib\axes\_base.py", line 273, in __call__
-    yield from self._plot_args(this, kwargs)
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\matplotlib\axes\_base.py", line 399, in _plot_args
-    raise ValueError(f"x and y must have same first dimension, but "
-ValueError: x and y must have same first dimension, but have shapes (10,) and (1,)
-[2022-02-08 23:08:02,569 : INFO : trainingModel] - imputed all missing values in data
-[2022-02-08 23:08:02,571 : INFO : trainingModel] - data features and labels saperated
-[2022-02-08 23:08:09,452 : INFO : trainingModel] - optimum number of clusters found as 3
-[2022-02-08 23:58:49,604 : INFO : trainingModel] - imputed all missing values in data
-[2022-02-08 23:58:49,606 : INFO : trainingModel] - data features and labels saperated
-[2022-02-08 23:59:01,787 : INFO : trainingModel] - optimum number of clusters found as 3
-[2022-02-09 00:05:58,796 : INFO : trainingModel] - imputed all missing values in data
-[2022-02-09 00:05:58,801 : INFO : trainingModel] - data features and labels saperated
-[2022-02-09 00:06:31,354 : INFO : trainingModel] - imputed all missing values in data
-[2022-02-09 00:06:31,356 : INFO : trainingModel] - data features and labels saperated
-[2022-02-09 00:06:38,250 : INFO : trainingModel] - optimum number of clusters found as 3
-[2022-02-09 00:06:38,394 : INFO : trainingModel] - Created clusters
-[2022-02-09 00:36:55,825 : INFO : trainingModel] - imputed all missing values in data
-[2022-02-09 00:36:55,833 : INFO : trainingModel] - data features and labels saperated
-[2022-02-09 00:37:04,321 : INFO : trainingModel] - optimum number of clusters found as 3
-[2022-02-09 00:37:04,639 : INFO : trainingModel] - Created clusters
+[2022-02-10 14:05:49,459 : INFO : trainingModel] - imputed all missing values in data
+[2022-02-10 14:05:49,462 : INFO : trainingModel] - data features and labels saperated
+[2022-02-10 14:05:50,049 : INFO : trainingModel] - logarithemic transformation completed
+[2022-02-10 14:05:50,078 : INFO : trainingModel] - standered scaling of data completed
+[2022-02-10 14:05:52,131 : INFO : trainingModel] - model training completed
+[2022-02-10 14:05:52,311 : INFO : trainingModel] - model training completed with training_score 0.9833078295824782 and test_score 0.9226994143292099
