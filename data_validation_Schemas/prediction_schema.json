@@ -1,13 +1,13 @@
 {	
 	"NumberofColumns" : 8,
 	"ColName": {
-		"Cement (component 1)(kg in a m^3 mixture)" : "FLOAT",
-		"Blast Furnace Slag (component 2)(kg in a m^3 mixture)" : "FLOAT",
-		"Fly Ash (component 3)(kg in a m^3 mixture)" : "FLOAT",
-		"Water  (component 4)(kg in a m^3 mixture)" : "FLOAT",
-		"Superplasticizer (component 5)(kg in a m^3 mixture)" : "FLOAT",
-		"Coarse Aggregate  (component 6)(kg in a m^3 mixture)" : "FLOAT",
-		"Fine Aggregate (component 7)(kg in a m^3 mixture)" : "FLOAT",
-		"Age (day)" : "INTEGER"
+		"Cement" : "FLOAT",
+		"Blast_Furnace_Slag" : "FLOAT",
+		"Fly_Ash" : "FLOAT",
+		"Water" : "FLOAT",
+		"Superplasticizer" : "FLOAT",
+		"Coarse_Aggregate" : "FLOAT",
+		"Fine_Aggregate" : "FLOAT",
+		"Age" : "INTEGER"
 	}
 }

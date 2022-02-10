@@ -1,0 +1,105 @@
+[2022-02-10 20:45:49,289 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-10 20:45:49,291 : ERROR : preprocessPredVals] - Error while standered scaling Expected 2D array, got scalar array instead:
+array=nan.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 46, in standeredScalePredValues
+    data_scaled = pd.DataFrame(scaler.transform(data), columns=data.columns)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\preprocessing\_data.py", line 886, in transform
+    force_all_finite='allow-nan')
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 691, in check_array
+    "if it contains a single sample.".format(array))
+ValueError: Expected 2D array, got scalar array instead:
+array=nan.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+[2022-02-10 20:45:49,325 : ERROR : preprocessPredVals] - Expected 2D array, got scalar array instead:
+array=nan.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 24, in preprocessPredvalues
+    data_scaled = self.standeredScalePredValues(data_transformed)
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 51, in standeredScalePredValues
+    raise e
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 46, in standeredScalePredValues
+    data_scaled = pd.DataFrame(scaler.transform(data), columns=data.columns)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\preprocessing\_data.py", line 886, in transform
+    force_all_finite='allow-nan')
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 691, in check_array
+    "if it contains a single sample.".format(array))
+ValueError: Expected 2D array, got scalar array instead:
+array=nan.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+[2022-02-10 20:50:16,668 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-10 20:50:16,669 : ERROR : preprocessPredVals] - Error while standered scaling Expected 2D array, got scalar array instead:
+array=nan.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 46, in standeredScalePredValues
+    print(scaler.transform(data))
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\preprocessing\_data.py", line 886, in transform
+    force_all_finite='allow-nan')
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 691, in check_array
+    "if it contains a single sample.".format(array))
+ValueError: Expected 2D array, got scalar array instead:
+array=nan.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+[2022-02-10 20:50:16,674 : ERROR : preprocessPredVals] - Expected 2D array, got scalar array instead:
+array=nan.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+Traceback (most recent call last):
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 24, in preprocessPredvalues
+    data_scaled = self.standeredScalePredValues(data_transformed)
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 52, in standeredScalePredValues
+    raise e
+  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 46, in standeredScalePredValues
+    print(scaler.transform(data))
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\preprocessing\_data.py", line 886, in transform
+    force_all_finite='allow-nan')
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 691, in check_array
+    "if it contains a single sample.".format(array))
+ValueError: Expected 2D array, got scalar array instead:
+array=nan.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+[2022-02-10 20:53:42,614 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-10 20:53:42,620 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-10 20:53:42,620 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-10 21:11:45,083 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-10 21:11:45,089 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-10 21:11:45,089 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-10 21:11:51,205 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-10 21:11:51,211 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-10 21:11:51,211 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-10 21:11:57,743 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-10 21:11:57,746 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-10 21:11:57,747 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-10 21:12:03,559 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-10 21:12:03,562 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-10 21:12:03,562 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-10 21:12:09,446 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-10 21:12:09,451 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-10 21:12:09,451 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-10 21:12:19,453 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-10 21:12:19,458 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-10 21:12:19,459 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-10 21:36:29,137 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-10 21:36:29,145 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-10 21:36:29,145 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-10 21:36:57,202 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-10 21:36:57,208 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-10 21:36:57,209 : INFO : preprocessPredVals] - prediction input values data preprocessing completed

@@ -1,8 +1,5 @@
-from ast import Try
-import imp
 import logging
-from re import X
-from sklearn.impute import KNNImputer
+# from sklearn.impute import KNNImputer
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 import numpy as np

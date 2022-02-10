@@ -3,8 +3,13 @@ from flask import Flask, render_template, request, jsonify
 from flask_cors import cross_origin, CORS
 import flask_monitoringdashboard as dashboard
 import os
+import pandas as pd
 from trainingValidationInsertion import Train_Validation
+from predictionDataValidation import Predicton_Data_Validation
 from trainingModel import Train_Model
+from Data_Preprocessing.preprocessPredVals import PreprocessVals
+from PredictOutput import Predict_Output
+
 
 os.putenv("LANG", "en_US.UTF-8")
 os.putenv("LC_ALL", "en_US.UTF-8")
@@ -56,9 +61,12 @@ def predictFromValue():
     try:
         if request.method == "POST":
             data_dict = request.json
-            output = "45 Mpa"
+            data = pd.json_normalize(data_dict).astype(float)
+            preprocess = PreprocessVals(data)
+            data = preprocess.preprocessPredvalues()
+            predict = Predict_Output()
+            output = str(predict.predictFromValues(data))
             return jsonify(output)
-            # return render_template('index.html')
         else:
             return render_template("index.html")
 
@@ -78,13 +86,13 @@ def predictFromCSV():
                 os.path.join(app.config["INPUT_DATA_PATH"], "prediction_data.csv")
             )
             """schema validation goes here"""
+            csvValidation = Predicton_Data_Validation(
+                "Prediction_Input/prediction_data.csv"
+            )
+            dic = csvValidation.predictionCSVvalidation()
 
-            # status = 'success'
-            dic = {
-                # "status" : "error",
-                "status": "success",
-                "val_error": "validation error message",
-            }
+            print(dic)
+
             if dic["status"] == "error":
                 return jsonify(dic)
             else:

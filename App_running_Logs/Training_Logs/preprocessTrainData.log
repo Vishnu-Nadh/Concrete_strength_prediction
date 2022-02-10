@@ -5,3 +5,11 @@
 [2022-02-10 14:05:50,065 : INFO : preprocessTraindata] - Std_Scaler scaler saved in directory
 [2022-02-10 14:05:50,076 : INFO : preprocessTraindata] - training data is scaled using standered scaler
 [2022-02-10 14:05:50,082 : INFO : preprocessTraindata] - data splitted to train and test data sets
+[2022-02-10 21:11:45,253 : INFO : PredictOutput] - predicted the compressive strength as 12.660175323486328
+[2022-02-10 21:11:51,236 : INFO : PredictOutput] - predicted the compressive strength as 12.660175323486328
+[2022-02-10 21:11:57,773 : INFO : PredictOutput] - predicted the compressive strength as 12.660175323486328
+[2022-02-10 21:12:03,585 : INFO : PredictOutput] - predicted the compressive strength as 2.7902777194976807
+[2022-02-10 21:12:09,474 : INFO : PredictOutput] - predicted the compressive strength as 35.120140075683594
+[2022-02-10 21:12:19,479 : INFO : PredictOutput] - predicted the compressive strength as 35.120140075683594
+[2022-02-10 21:36:29,169 : INFO : PredictOutput] - predicted the compressive strength as 78.25615692138672
+[2022-02-10 21:36:57,236 : INFO : PredictOutput] - predicted the compressive strength as 64.68873596191406
