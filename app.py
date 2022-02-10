@@ -97,6 +97,7 @@ def predictFromCSV():
                 return jsonify(dic)
             else:
                 """prediction calculation goes here"""
+
                 return jsonify(dic)
         else:
             return render_template("predictCSV.html")

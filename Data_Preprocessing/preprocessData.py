@@ -1,5 +1,5 @@
 import logging
-# from sklearn.impute import KNNImputer
+from sklearn.impute import KNNImputer
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 import numpy as np
@@ -13,6 +13,7 @@ from application_logger.loggerConfigure import configure_logger
 
 logger = logging.getLogger(__name__)
 logger = configure_logger(logger, "Training_Logs/preprocessTrainData.log")
+logger_ =configure_logger(logger, "Prediction_Logs/preprocessPreditionCSV.log" )
 
 
 class Preprocessor:

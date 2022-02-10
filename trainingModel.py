@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from Data_Ingestion.train_data_loader import Data_Loader_Train
-from Data_Preprocessing.preprocessTraindata import Preprocessor
+from Data_Preprocessing.preprocessData import Preprocessor
 from clustering.clustering import Data_Clustering
 from File_Operations.fileOperations import File_Operations
 # from Best_model_finder.tuner import Model_Finder

@@ -27,3 +27,19 @@ class Predict_Output:
         except Exception as e:
             self.logger.exception(f"error while predicting output : {e}")
             raise e
+    
+    def predictFromCSV(self, data):
+        """this method predict output from the csv data after preprocessing the data
+
+        Args:
+            data (data): input features data
+        """
+        try:
+            # preprocessing steps goes here
+            pass
+        
+        except Exception as e:
+            pass
+        
+            raise e
+        
