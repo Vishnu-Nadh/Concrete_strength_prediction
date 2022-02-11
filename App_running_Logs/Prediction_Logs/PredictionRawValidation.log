@@ -156,3 +156,136 @@ IndexError: index 8 is out of bounds for axis 0 with size 8
 
 [1030 rows x 8 columns] passed column name validation
 [2022-02-10 23:38:46,921 : INFO : predictionRawValidation] - data has no column with all null values
+[2022-02-11 10:14:04,923 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 10:14:04,923 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 10:14:04,950 : INFO : predictionRawValidation] - data column number validation failed
+[2022-02-11 10:14:18,516 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 10:14:18,516 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 10:14:18,527 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-11 10:14:18,532 : INFO : predictionRawValidation] - data failed column name validation at column number:4
+[2022-02-11 10:14:32,132 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 10:14:32,133 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 10:14:32,145 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-11 10:14:32,218 : INFO : predictionRawValidation] - file       Cement  Blast_Furnace_Slag  Fly_Ash  Water  Superplasticizer  Coarse_Aggregate  Fine_Aggregate  Age
+0      540.0                 0.0      NaN  162.0               2.5            1040.0           676.0   28
+1      540.0                 0.0      NaN  162.0               2.5            1055.0           676.0   28
+2      332.5               142.5      NaN  228.0               0.0             932.0           594.0  270
+3      332.5               142.5      NaN  228.0               0.0             932.0           594.0  365
+4      198.6               132.4      NaN  192.0               0.0             978.4           825.5  360
+...      ...                 ...      ...    ...               ...               ...             ...  ...
+1025   276.4               116.0      NaN  179.6               8.9             870.1           768.3   28
+1026   322.2                 0.0      NaN  196.0              10.4             817.9           813.4   28
+1027   148.5               139.4      NaN  192.7               6.1             892.4           780.0   28
+1028   159.1               186.7      NaN  175.6              11.3             989.6           788.9   28
+1029   260.9               100.5      NaN  200.6               8.6             864.5           761.5   28
+
+[1030 rows x 8 columns] passed column name validation
+[2022-02-11 10:14:32,233 : INFO : predictionRawValidation] - found a column with all null values in data!
+[2022-02-11 10:14:36,594 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 10:14:36,595 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 10:14:36,602 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-11 10:14:36,663 : INFO : predictionRawValidation] - file       Cement  Blast_Furnace_Slag  Fly_Ash  Water  Superplasticizer  Coarse_Aggregate  Fine_Aggregate  Age
+0      540.0                 0.0      NaN  162.0               2.5            1040.0           676.0   28
+1      540.0                 0.0      NaN  162.0               2.5            1055.0           676.0   28
+2      332.5               142.5      NaN  228.0               0.0             932.0           594.0  270
+3      332.5               142.5      NaN  228.0               0.0             932.0           594.0  365
+4      198.6               132.4      NaN  192.0               0.0             978.4           825.5  360
+...      ...                 ...      ...    ...               ...               ...             ...  ...
+1025   276.4               116.0      NaN  179.6               8.9             870.1           768.3   28
+1026   322.2                 0.0      NaN  196.0              10.4             817.9           813.4   28
+1027   148.5               139.4      NaN  192.7               6.1             892.4           780.0   28
+1028   159.1               186.7      NaN  175.6              11.3             989.6           788.9   28
+1029   260.9               100.5      NaN  200.6               8.6             864.5           761.5   28
+
+[1030 rows x 8 columns] passed column name validation
+[2022-02-11 10:14:36,671 : INFO : predictionRawValidation] - found a column with all null values in data!
+[2022-02-11 10:14:37,946 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 10:14:37,946 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 10:14:37,953 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-11 10:14:38,018 : INFO : predictionRawValidation] - file       Cement  Blast_Furnace_Slag  Fly_Ash  Water  Superplasticizer  Coarse_Aggregate  Fine_Aggregate  Age
+0      540.0                 0.0      NaN  162.0               2.5            1040.0           676.0   28
+1      540.0                 0.0      NaN  162.0               2.5            1055.0           676.0   28
+2      332.5               142.5      NaN  228.0               0.0             932.0           594.0  270
+3      332.5               142.5      NaN  228.0               0.0             932.0           594.0  365
+4      198.6               132.4      NaN  192.0               0.0             978.4           825.5  360
+...      ...                 ...      ...    ...               ...               ...             ...  ...
+1025   276.4               116.0      NaN  179.6               8.9             870.1           768.3   28
+1026   322.2                 0.0      NaN  196.0              10.4             817.9           813.4   28
+1027   148.5               139.4      NaN  192.7               6.1             892.4           780.0   28
+1028   159.1               186.7      NaN  175.6              11.3             989.6           788.9   28
+1029   260.9               100.5      NaN  200.6               8.6             864.5           761.5   28
+
+[1030 rows x 8 columns] passed column name validation
+[2022-02-11 10:14:38,029 : INFO : predictionRawValidation] - found a column with all null values in data!
+[2022-02-11 10:14:38,712 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 10:14:38,712 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 10:14:38,719 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-11 10:14:38,798 : INFO : predictionRawValidation] - file       Cement  Blast_Furnace_Slag  Fly_Ash  Water  Superplasticizer  Coarse_Aggregate  Fine_Aggregate  Age
+0      540.0                 0.0      NaN  162.0               2.5            1040.0           676.0   28
+1      540.0                 0.0      NaN  162.0               2.5            1055.0           676.0   28
+2      332.5               142.5      NaN  228.0               0.0             932.0           594.0  270
+3      332.5               142.5      NaN  228.0               0.0             932.0           594.0  365
+4      198.6               132.4      NaN  192.0               0.0             978.4           825.5  360
+...      ...                 ...      ...    ...               ...               ...             ...  ...
+1025   276.4               116.0      NaN  179.6               8.9             870.1           768.3   28
+1026   322.2                 0.0      NaN  196.0              10.4             817.9           813.4   28
+1027   148.5               139.4      NaN  192.7               6.1             892.4           780.0   28
+1028   159.1               186.7      NaN  175.6              11.3             989.6           788.9   28
+1029   260.9               100.5      NaN  200.6               8.6             864.5           761.5   28
+
+[1030 rows x 8 columns] passed column name validation
+[2022-02-11 10:14:38,808 : INFO : predictionRawValidation] - found a column with all null values in data!
+[2022-02-11 10:14:39,399 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 10:14:39,400 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 10:14:39,407 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-11 10:14:39,451 : INFO : predictionRawValidation] - file       Cement  Blast_Furnace_Slag  Fly_Ash  Water  Superplasticizer  Coarse_Aggregate  Fine_Aggregate  Age
+0      540.0                 0.0      NaN  162.0               2.5            1040.0           676.0   28
+1      540.0                 0.0      NaN  162.0               2.5            1055.0           676.0   28
+2      332.5               142.5      NaN  228.0               0.0             932.0           594.0  270
+3      332.5               142.5      NaN  228.0               0.0             932.0           594.0  365
+4      198.6               132.4      NaN  192.0               0.0             978.4           825.5  360
+...      ...                 ...      ...    ...               ...               ...             ...  ...
+1025   276.4               116.0      NaN  179.6               8.9             870.1           768.3   28
+1026   322.2                 0.0      NaN  196.0              10.4             817.9           813.4   28
+1027   148.5               139.4      NaN  192.7               6.1             892.4           780.0   28
+1028   159.1               186.7      NaN  175.6              11.3             989.6           788.9   28
+1029   260.9               100.5      NaN  200.6               8.6             864.5           761.5   28
+
+[1030 rows x 8 columns] passed column name validation
+[2022-02-11 10:14:39,461 : INFO : predictionRawValidation] - found a column with all null values in data!
+[2022-02-11 10:14:56,470 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 10:14:56,471 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 10:14:56,480 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-11 10:14:56,527 : INFO : predictionRawValidation] - file       Cement  Blast_Furnace_Slag  Fly_Ash  Water  Superplasticizer  Coarse_Aggregate  Fine_Aggregate  Age
+0      540.0                 0.0      0.0  162.0               2.5            1040.0           676.0   28
+1      540.0                 0.0      0.0  162.0               2.5            1055.0           676.0   28
+2      332.5               142.5      0.0  228.0               0.0             932.0           594.0  270
+3      332.5               142.5      0.0  228.0               0.0             932.0           594.0  365
+4      198.6               132.4      0.0  192.0               0.0             978.4           825.5  360
+...      ...                 ...      ...    ...               ...               ...             ...  ...
+1025   276.4               116.0     90.3  179.6               8.9             870.1           768.3   28
+1026   322.2                 0.0    115.6  196.0              10.4             817.9           813.4   28
+1027   148.5               139.4    108.6  192.7               6.1             892.4           780.0   28
+1028   159.1               186.7      0.0  175.6              11.3             989.6           788.9   28
+1029   260.9               100.5     78.3  200.6               8.6             864.5           761.5   28
+
+[1030 rows x 8 columns] passed column name validation
+[2022-02-11 10:14:56,538 : INFO : predictionRawValidation] - data has no column with all null values
+[2022-02-11 10:17:09,519 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 10:17:09,520 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 10:17:09,526 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-11 10:17:09,563 : INFO : predictionRawValidation] - file       Cement  Blast_Furnace_Slag  Fly_Ash  Water  Superplasticizer  Coarse_Aggregate  Fine_Aggregate  Age
+0      540.0                 0.0      0.0    NaN               2.5            1040.0           676.0   28
+1        NaN                 0.0      0.0  162.0               2.5            1055.0           676.0   28
+2        NaN               142.5      0.0  228.0               0.0             932.0           594.0  270
+3      332.5               142.5      0.0  228.0               0.0             932.0           594.0  365
+4      198.6               132.4      0.0  192.0               0.0             978.4           825.5  360
+...      ...                 ...      ...    ...               ...               ...             ...  ...
+1025   276.4               116.0     90.3  179.6               8.9             870.1           768.3   28
+1026   322.2                 0.0    115.6  196.0              10.4             817.9           813.4   28
+1027   148.5               139.4    108.6  192.7               6.1             892.4           780.0   28
+1028   159.1               186.7      0.0  175.6              11.3             989.6           788.9   28
+1029   260.9               100.5     78.3  200.6               8.6             864.5           761.5   28
+
+[1030 rows x 8 columns] passed column name validation
+[2022-02-11 10:17:09,575 : INFO : predictionRawValidation] - data has no column with all null values

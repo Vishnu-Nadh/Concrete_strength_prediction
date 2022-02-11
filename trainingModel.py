@@ -27,7 +27,7 @@ class Train_Model:
             data = dataloader.get_train_data()
             
             # data preprocessing
-            preprocessor = Preprocessor(data)
+            preprocessor = Preprocessor(data,  "Training_Logs/preprocessTrainData.log")
             
             is_null_present, columns_with_nan = preprocessor.getColsWithNullValues()
             

@@ -97,6 +97,8 @@ def predictFromCSV():
                 return jsonify(dic)
             else:
                 """prediction calculation goes here"""
+                predict = Predict_Output()
+                data = predict.predictFromCSV()
 
                 return jsonify(dic)
         else:
