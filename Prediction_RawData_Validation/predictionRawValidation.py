@@ -79,7 +79,7 @@ class Prediction_Raw_Validation:
                     break
                 
             if count == 0:
-                logger.info(f"file {data} passed column name validation")
+                logger.info(f"data passed column name validation")
                 return True
             else:
                 return False
