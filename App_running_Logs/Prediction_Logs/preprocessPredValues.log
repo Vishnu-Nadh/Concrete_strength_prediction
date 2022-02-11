@@ -157,3 +157,18 @@ Reshape your data either using array.reshape(-1, 1) if your data has a single fe
 [2022-02-11 19:58:04,615 : INFO : preprocessPredVals] - input prediction values are logtransformed
 [2022-02-11 19:58:04,618 : INFO : preprocessPredVals] - prediction data values scaled
 [2022-02-11 19:58:04,618 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 20:45:31,787 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 20:45:31,796 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 20:45:31,796 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 20:47:27,986 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 20:47:28,002 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 20:47:28,002 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 20:47:35,884 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 20:47:35,890 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 20:47:35,890 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 21:16:11,916 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 21:16:11,922 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 21:16:11,923 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 21:16:19,874 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 21:16:19,885 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 21:16:19,886 : INFO : preprocessPredVals] - prediction input values data preprocessing completed

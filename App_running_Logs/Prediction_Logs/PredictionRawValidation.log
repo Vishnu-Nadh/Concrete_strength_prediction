@@ -309,3 +309,13 @@ IndexError: index 8 is out of bounds for axis 0 with size 8
 [2022-02-11 19:55:32,253 : INFO : predictionRawValidation] - data column number validation succeeded
 [2022-02-11 19:55:32,259 : INFO : predictionRawValidation] - data passed column name validation
 [2022-02-11 19:55:32,269 : INFO : predictionRawValidation] - data has no column with all null values
+[2022-02-11 21:29:41,159 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 21:29:41,159 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 21:29:41,183 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-11 21:29:41,208 : INFO : predictionRawValidation] - data passed column name validation
+[2022-02-11 21:29:41,232 : INFO : predictionRawValidation] - data has no column with all null values
+[2022-02-11 21:30:09,424 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 21:30:09,425 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 21:30:09,440 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-11 21:30:09,465 : INFO : predictionRawValidation] - data passed column name validation
+[2022-02-11 21:30:09,484 : INFO : predictionRawValidation] - data has no column with all null values
