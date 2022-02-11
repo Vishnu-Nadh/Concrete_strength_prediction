@@ -1,3 +1,6 @@
 [2022-02-10 14:05:50,064 : INFO : fileOperations] - scaler Std_Scaler saved to scaler directory
 [2022-02-10 14:05:52,163 : INFO : fileOperations] - model XGB_Model saved to model directory
 [2022-02-10 14:05:52,209 : INFO : fileOperations] - loaded model from saved pickle format
+[2022-02-11 19:56:20,010 : INFO : fileOperations] - scaler Std_Scaler saved to scaler directory
+[2022-02-11 19:56:21,570 : INFO : fileOperations] - model XGB_Model saved to model directory
+[2022-02-11 19:56:21,600 : INFO : fileOperations] - loaded model from saved pickle format

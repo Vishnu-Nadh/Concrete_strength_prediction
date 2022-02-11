@@ -10,3 +10,37 @@
 [2022-02-11 10:17:10,056 : INFO : preprocessData] - applied logarithamic transformation to the data
 [2022-02-11 10:17:10,083 : INFO : preprocessData] - data scaled using saved scaler model
 [2022-02-11 10:17:10,083 : INFO : preprocessData] - data scaled using saved scaler model
+[2022-02-11 16:51:28,963 : INFO : preprocessData] - found null values in 2 columns
+[2022-02-11 16:51:28,980 : INFO : preprocessData] - imputed all missing value in the data
+[2022-02-11 16:51:29,333 : INFO : preprocessData] - applied logarithamic transformation to the data
+[2022-02-11 16:51:29,341 : INFO : preprocessData] - data scaled using saved scaler model
+[2022-02-11 17:10:44,102 : INFO : preprocessData] - found null values in 2 columns
+[2022-02-11 17:10:44,113 : INFO : preprocessData] - imputed all missing value in the data
+[2022-02-11 17:10:44,405 : INFO : preprocessData] - applied logarithamic transformation to the data
+[2022-02-11 17:10:44,409 : INFO : preprocessData] - data scaled using saved scaler model
+[2022-02-11 19:55:21,211 : INFO : preprocessData] - found null values in 2 columns
+[2022-02-11 19:55:21,221 : INFO : preprocessData] - imputed all missing value in the data
+[2022-02-11 19:55:21,531 : INFO : preprocessData] - applied logarithamic transformation to the data
+[2022-02-11 19:55:21,538 : INFO : preprocessData] - data scaled using saved scaler model
+[2022-02-11 19:55:32,280 : INFO : preprocessData] - found null values in 2 columns
+[2022-02-11 19:55:32,280 : INFO : preprocessData] - found null values in 2 columns
+[2022-02-11 19:55:32,290 : INFO : preprocessData] - imputed all missing value in the data
+[2022-02-11 19:55:32,290 : INFO : preprocessData] - imputed all missing value in the data
+[2022-02-11 19:55:32,605 : INFO : preprocessData] - applied logarithamic transformation to the data
+[2022-02-11 19:55:32,605 : INFO : preprocessData] - applied logarithamic transformation to the data
+[2022-02-11 19:55:32,608 : INFO : preprocessData] - data scaled using saved scaler model
+[2022-02-11 19:55:32,608 : INFO : preprocessData] - data scaled using saved scaler model
+[2022-02-11 19:56:19,722 : INFO : preprocessData] - found null values in 0 columns
+[2022-02-11 19:56:19,722 : INFO : preprocessData] - found null values in 0 columns
+[2022-02-11 19:56:19,733 : INFO : preprocessData] - imputed all missing value in the data
+[2022-02-11 19:56:19,733 : INFO : preprocessData] - imputed all missing value in the data
+[2022-02-11 19:56:19,740 : INFO : preprocessData] - data saparated to features and labels
+[2022-02-11 19:56:19,740 : INFO : preprocessData] - data saparated to features and labels
+[2022-02-11 19:56:20,000 : INFO : preprocessData] - applied logarithamic transformation to the data
+[2022-02-11 19:56:20,000 : INFO : preprocessData] - applied logarithamic transformation to the data
+[2022-02-11 19:56:20,011 : INFO : preprocessData] - Std_Scaler scaler saved in directory
+[2022-02-11 19:56:20,011 : INFO : preprocessData] - Std_Scaler scaler saved in directory
+[2022-02-11 19:56:20,023 : INFO : preprocessData] - training data is scaled using standered scaler
+[2022-02-11 19:56:20,023 : INFO : preprocessData] - training data is scaled using standered scaler
+[2022-02-11 19:56:20,033 : INFO : preprocessData] - data splitted to train and test data sets
+[2022-02-11 19:56:20,033 : INFO : preprocessData] - data splitted to train and test data sets

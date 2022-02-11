@@ -13,3 +13,10 @@
 [2022-02-10 21:12:19,479 : INFO : PredictOutput] - predicted the compressive strength as 35.120140075683594
 [2022-02-10 21:36:29,169 : INFO : PredictOutput] - predicted the compressive strength as 78.25615692138672
 [2022-02-10 21:36:57,236 : INFO : PredictOutput] - predicted the compressive strength as 64.68873596191406
+[2022-02-11 19:56:19,722 : INFO : preprocessData] - found null values in 0 columns
+[2022-02-11 19:56:19,733 : INFO : preprocessData] - imputed all missing value in the data
+[2022-02-11 19:56:19,740 : INFO : preprocessData] - data saparated to features and labels
+[2022-02-11 19:56:20,000 : INFO : preprocessData] - applied logarithamic transformation to the data
+[2022-02-11 19:56:20,011 : INFO : preprocessData] - Std_Scaler scaler saved in directory
+[2022-02-11 19:56:20,023 : INFO : preprocessData] - training data is scaled using standered scaler
+[2022-02-11 19:56:20,033 : INFO : preprocessData] - data splitted to train and test data sets

@@ -115,3 +115,45 @@ Reshape your data either using array.reshape(-1, 1) if your data has a single fe
 [2022-02-11 10:13:08,785 : INFO : preprocessPredVals] - input prediction values are logtransformed
 [2022-02-11 10:13:08,790 : INFO : preprocessPredVals] - prediction data values scaled
 [2022-02-11 10:13:08,790 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 10:30:34,475 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 10:30:34,481 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 10:30:34,481 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 10:30:50,326 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 10:30:50,331 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 10:30:50,331 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 11:58:49,733 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 11:58:49,750 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 11:58:49,750 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 11:59:04,298 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 11:59:04,303 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 11:59:04,304 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 11:59:10,254 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 11:59:10,258 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 11:59:10,259 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 11:59:19,808 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 11:59:19,813 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 11:59:19,813 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 11:59:27,664 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 11:59:27,668 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 11:59:27,669 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 11:59:34,765 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 11:59:34,768 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 11:59:34,769 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 11:59:41,309 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 11:59:41,313 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 11:59:41,313 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 11:59:49,184 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 11:59:49,190 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 11:59:49,191 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 16:51:13,179 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 16:51:13,183 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 16:51:13,183 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 19:57:44,424 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 19:57:44,429 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 19:57:44,429 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 19:57:56,630 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 19:57:56,636 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 19:57:56,636 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-11 19:58:04,615 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-11 19:58:04,618 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-11 19:58:04,618 : INFO : preprocessPredVals] - prediction input values data preprocessing completed

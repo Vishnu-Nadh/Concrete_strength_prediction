@@ -7,3 +7,12 @@
 [2022-02-10 14:05:49,294 : INFO : dbOperations] - Concrete_Data.csv added to database table
 [2022-02-10 14:05:49,363 : INFO : dbOperations] - opened database Training succussfully
 [2022-02-10 14:05:49,399 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-11 19:56:19,537 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-11 19:56:19,541 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-11 19:56:19,543 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-11 19:56:19,546 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-11 19:56:19,560 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-11 19:56:19,563 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-11 19:56:19,604 : INFO : dbOperations] - Concrete_Data.csv added to database table
+[2022-02-11 19:56:19,668 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-11 19:56:19,690 : INFO : dbOperations] - Data base table exported to csv succussfully

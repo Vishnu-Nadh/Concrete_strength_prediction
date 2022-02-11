@@ -1,5 +1,5 @@
 from wsgiref import simple_server
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_file
 from flask_cors import cross_origin, CORS
 import flask_monitoringdashboard as dashboard
 import os
@@ -98,13 +98,19 @@ def predictFromCSV():
             else:
                 """prediction calculation goes here"""
                 predict = Predict_Output()
-                data = predict.predictFromCSV()
-
+                response = predict.predictFromCSV()
+                print(response)
                 return jsonify(dic)
         else:
             return render_template("predictCSV.html")
     except Exception as e:
         raise e
+
+
+@app.route("/download_result", methods=["GET", "POST"])
+def download_result():
+    path = os.path.join(app.config["SENT_RESULT_PATH"], "predictions.csv")
+    return send_file(path, "predictions.csv", as_attachment=True)
 
 
 # port = int(os.getenv("PORT", 5000))

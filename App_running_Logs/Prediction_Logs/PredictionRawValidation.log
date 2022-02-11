@@ -289,3 +289,23 @@ IndexError: index 8 is out of bounds for axis 0 with size 8
 
 [1030 rows x 8 columns] passed column name validation
 [2022-02-11 10:17:09,575 : INFO : predictionRawValidation] - data has no column with all null values
+[2022-02-11 16:51:28,890 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 16:51:28,891 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 16:51:28,913 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-11 16:51:28,931 : INFO : predictionRawValidation] - data passed column name validation
+[2022-02-11 16:51:28,943 : INFO : predictionRawValidation] - data has no column with all null values
+[2022-02-11 17:10:44,038 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 17:10:44,039 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 17:10:44,063 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-11 17:10:44,075 : INFO : predictionRawValidation] - data passed column name validation
+[2022-02-11 17:10:44,084 : INFO : predictionRawValidation] - data has no column with all null values
+[2022-02-11 19:55:21,162 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 19:55:21,163 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 19:55:21,183 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-11 19:55:21,192 : INFO : predictionRawValidation] - data passed column name validation
+[2022-02-11 19:55:21,198 : INFO : predictionRawValidation] - data has no column with all null values
+[2022-02-11 19:55:32,245 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-11 19:55:32,245 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-11 19:55:32,253 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-11 19:55:32,259 : INFO : predictionRawValidation] - data passed column name validation
+[2022-02-11 19:55:32,269 : INFO : predictionRawValidation] - data has no column with all null values
