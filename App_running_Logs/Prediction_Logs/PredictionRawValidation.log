@@ -7,3 +7,8 @@
 [2022-02-12 18:10:37,189 : INFO : predictionRawValidation] - data column number validation succeeded
 [2022-02-12 18:10:37,196 : INFO : predictionRawValidation] - data passed column name validation
 [2022-02-12 18:10:37,207 : INFO : predictionRawValidation] - data has no column with all null values
+[2022-02-12 18:49:30,738 : INFO : predictionRawValidation] - starting getValuesFromScheama...
+[2022-02-12 18:49:30,739 : INFO : predictionRawValidation] - Extracted values from schema
+[2022-02-12 18:49:30,755 : INFO : predictionRawValidation] - data column number validation succeeded
+[2022-02-12 18:49:30,782 : INFO : predictionRawValidation] - data passed column name validation
+[2022-02-12 18:49:30,795 : INFO : predictionRawValidation] - data has no column with all null values

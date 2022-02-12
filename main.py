@@ -80,8 +80,6 @@ def predictFromCSV():
     try:
         if request.method == "POST":
             file = request.files["file"]
-            print(file)
-            print(file.filename)
             file.save(
                 os.path.join(app.config["INPUT_DATA_PATH"], "prediction_data.csv")
             )
@@ -117,6 +115,3 @@ if __name__ == "__main__":
     httpd = simple_server.make_server(host, port, app)
     print(f"Serving on {host}:5000")
     httpd.serve_forever()
-
-# if __name__ == "__main__":
-#     app.run(debug=True)

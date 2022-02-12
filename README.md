@@ -24,9 +24,9 @@ single sample value or as a batch file of many sample input Data.
 
 ## Deployed Link
 
-This project is deployed in the cloud service of Heroku using docker and Circle CI to establish countinous intergration and continous development.
+This project is deployed in the cloud service of Heroku using docker and Circle CI to establish countinous intergration and continous development. The retraining feature is removed from deployed version of app inorder to stay within the heroku free tier limit service.
 
-- App link : [Concrete_strength_predictor]()
+- App link : [Concrete_strength_predictor](https://concrete-strength-prediction11.herokuapp.com/)
 
 ## Run App Locally
 
@@ -44,6 +44,9 @@ Go to the project directory you want to clone the project files
   git clone https://github.com/Vishnu-Nadh/Concrete_strength_prediction.git
 ```
 
+To Avail the retraining feature button go to base.html file, find button with class "train-btn"
+and remove the inline style : style="display: none".
+
 Install dependencies
 
 Choose your python environment to install dependencies and install the libaries using below commant in terminal
@@ -52,13 +55,14 @@ Choose your python environment to install dependencies and install the libaries 
   pip install -r requirements.txt
 ```
 
-Start the server
+Start the server.
+You can either run main.py file or type the below command in terminal
 
 ```bash
-    python app.py
+    python main.py
 ```
 
-Press Enter and visit the app from local host url shown in the terminal. Use csv data from the folder "Prediction_Input" to test the app
+Press Enter. The app will be running in localhost port number 5000 : http://localhost:5000/. Use csv data from the folder "Prediction_Input" to test the app
 
 ## Reflection
 

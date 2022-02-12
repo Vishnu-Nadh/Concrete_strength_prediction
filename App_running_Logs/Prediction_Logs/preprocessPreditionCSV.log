@@ -2,3 +2,7 @@
 [2022-02-12 18:10:37,243 : INFO : preprocessData] - imputed all missing value in the data
 [2022-02-12 18:10:37,633 : INFO : preprocessData] - applied logarithamic transformation to the data
 [2022-02-12 18:10:37,638 : INFO : preprocessData] - data scaled using saved scaler model
+[2022-02-12 18:49:30,818 : INFO : preprocessData] - found null values in 2 columns
+[2022-02-12 18:49:30,836 : INFO : preprocessData] - imputed all missing value in the data
+[2022-02-12 18:49:31,158 : INFO : preprocessData] - applied logarithamic transformation to the data
+[2022-02-12 18:49:31,164 : INFO : preprocessData] - data scaled using saved scaler model
