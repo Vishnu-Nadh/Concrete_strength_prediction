@@ -1,38 +1,15 @@
-[2022-02-11 16:51:13,344 : INFO : PredictOutput] - predicted the compressive strength as 44.96394348144531
-[2022-02-11 16:51:28,964 : INFO : PredictOutput] - null column details identified
-[2022-02-11 16:51:28,980 : INFO : PredictOutput] - all null values are imputed
-[2022-02-11 16:51:29,333 : INFO : PredictOutput] - applied logtransformation on data
-[2022-02-11 16:51:29,341 : INFO : PredictOutput] - applied standered scaling on data
-[2022-02-11 17:10:44,102 : INFO : PredictOutput] - null column details identified
-[2022-02-11 17:10:44,113 : INFO : PredictOutput] - all null values are imputed
-[2022-02-11 17:10:44,406 : INFO : PredictOutput] - applied logtransformation on data
-[2022-02-11 17:10:44,409 : INFO : PredictOutput] - applied standered scaling on data
-[2022-02-11 19:55:21,211 : INFO : PredictOutput] - null column details identified
-[2022-02-11 19:55:21,221 : INFO : PredictOutput] - all null values are imputed
-[2022-02-11 19:55:21,531 : INFO : PredictOutput] - applied logtransformation on data
-[2022-02-11 19:55:21,538 : INFO : PredictOutput] - applied standered scaling on data
-[2022-02-11 19:55:32,280 : INFO : PredictOutput] - null column details identified
-[2022-02-11 19:55:32,290 : INFO : PredictOutput] - all null values are imputed
-[2022-02-11 19:55:32,605 : INFO : PredictOutput] - applied logtransformation on data
-[2022-02-11 19:55:32,608 : INFO : PredictOutput] - applied standered scaling on data
-[2022-02-11 19:57:44,452 : INFO : PredictOutput] - predicted the compressive strength as 31.99068832397461
-[2022-02-11 19:57:56,661 : INFO : PredictOutput] - predicted the compressive strength as 52.45956802368164
-[2022-02-11 19:58:04,647 : INFO : PredictOutput] - predicted the compressive strength as 54.89430236816406
-[2022-02-11 20:45:31,932 : INFO : PredictOutput] - predicted the compressive strength as 53.71358108520508
-[2022-02-11 20:47:28,052 : INFO : PredictOutput] - predicted the compressive strength as 56.76411437988281
-[2022-02-11 20:47:35,935 : INFO : PredictOutput] - predicted the compressive strength as 34.003204345703125
-[2022-02-11 21:16:11,964 : INFO : PredictOutput] - predicted the compressive strength as 43.84669494628906
-[2022-02-11 21:16:19,927 : INFO : PredictOutput] - predicted the compressive strength as 26.00542640686035
-[2022-02-11 21:29:41,247 : INFO : PredictOutput] - null column details identified
-[2022-02-11 21:29:41,258 : INFO : PredictOutput] - all null values are imputed
-[2022-02-11 21:29:41,743 : INFO : PredictOutput] - applied logtransformation on data
-[2022-02-11 21:29:41,749 : INFO : PredictOutput] - applied standered scaling on data
-[2022-02-11 21:30:09,525 : INFO : PredictOutput] - null column details identified
-[2022-02-11 21:30:09,543 : INFO : PredictOutput] - all null values are imputed
-[2022-02-11 21:30:10,011 : INFO : PredictOutput] - applied logtransformation on data
-[2022-02-11 21:30:10,016 : INFO : PredictOutput] - applied standered scaling on data
-[2022-02-12 12:57:07,680 : INFO : PredictOutput] - predicted the compressive strength as 3.582710027694702
-[2022-02-12 12:57:42,601 : INFO : PredictOutput] - null column details identified
-[2022-02-12 12:57:42,613 : INFO : PredictOutput] - all null values are imputed
-[2022-02-12 12:57:42,867 : INFO : PredictOutput] - applied logtransformation on data
-[2022-02-12 12:57:42,871 : INFO : PredictOutput] - applied standered scaling on data
+[2022-02-12 18:02:00,323 : INFO : PredictOutput] - predicted the compressive strength as 21.577299118041992
+[2022-02-12 18:02:09,612 : INFO : PredictOutput] - predicted the compressive strength as 21.577299118041992
+[2022-02-12 18:02:19,128 : INFO : PredictOutput] - predicted the compressive strength as 24.602123260498047
+[2022-02-12 18:02:28,323 : INFO : PredictOutput] - predicted the compressive strength as 55.061622619628906
+[2022-02-12 18:02:34,139 : INFO : PredictOutput] - predicted the compressive strength as 55.061622619628906
+[2022-02-12 18:05:21,069 : INFO : PredictOutput] - predicted the compressive strength as 48.39849090576172
+[2022-02-12 18:06:26,295 : INFO : PredictOutput] - predicted the compressive strength as 33.309478759765625
+[2022-02-12 18:06:35,938 : INFO : PredictOutput] - predicted the compressive strength as 33.04126739501953
+[2022-02-12 18:06:42,339 : INFO : PredictOutput] - predicted the compressive strength as 33.04126739501953
+[2022-02-12 18:06:50,841 : INFO : PredictOutput] - predicted the compressive strength as 32.60751724243164
+[2022-02-12 18:06:56,006 : INFO : PredictOutput] - predicted the compressive strength as 32.60751724243164
+[2022-02-12 18:10:37,227 : INFO : PredictOutput] - null column details identified
+[2022-02-12 18:10:37,243 : INFO : PredictOutput] - all null values are imputed
+[2022-02-12 18:10:37,633 : INFO : PredictOutput] - applied logtransformation on data
+[2022-02-12 18:10:37,638 : INFO : PredictOutput] - applied standered scaling on data

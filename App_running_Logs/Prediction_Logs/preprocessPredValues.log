@@ -1,177 +1,33 @@
-[2022-02-10 20:45:49,289 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-10 20:45:49,291 : ERROR : preprocessPredVals] - Error while standered scaling Expected 2D array, got scalar array instead:
-array=nan.
-Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
-Traceback (most recent call last):
-  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 46, in standeredScalePredValues
-    data_scaled = pd.DataFrame(scaler.transform(data), columns=data.columns)
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\preprocessing\_data.py", line 886, in transform
-    force_all_finite='allow-nan')
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\base.py", line 421, in _validate_data
-    X = check_array(X, **check_params)
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
-    return f(*args, **kwargs)
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 691, in check_array
-    "if it contains a single sample.".format(array))
-ValueError: Expected 2D array, got scalar array instead:
-array=nan.
-Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
-[2022-02-10 20:45:49,325 : ERROR : preprocessPredVals] - Expected 2D array, got scalar array instead:
-array=nan.
-Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
-Traceback (most recent call last):
-  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 24, in preprocessPredvalues
-    data_scaled = self.standeredScalePredValues(data_transformed)
-  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 51, in standeredScalePredValues
-    raise e
-  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 46, in standeredScalePredValues
-    data_scaled = pd.DataFrame(scaler.transform(data), columns=data.columns)
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\preprocessing\_data.py", line 886, in transform
-    force_all_finite='allow-nan')
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\base.py", line 421, in _validate_data
-    X = check_array(X, **check_params)
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
-    return f(*args, **kwargs)
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 691, in check_array
-    "if it contains a single sample.".format(array))
-ValueError: Expected 2D array, got scalar array instead:
-array=nan.
-Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
-[2022-02-10 20:50:16,668 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-10 20:50:16,669 : ERROR : preprocessPredVals] - Error while standered scaling Expected 2D array, got scalar array instead:
-array=nan.
-Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
-Traceback (most recent call last):
-  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 46, in standeredScalePredValues
-    print(scaler.transform(data))
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\preprocessing\_data.py", line 886, in transform
-    force_all_finite='allow-nan')
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\base.py", line 421, in _validate_data
-    X = check_array(X, **check_params)
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
-    return f(*args, **kwargs)
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 691, in check_array
-    "if it contains a single sample.".format(array))
-ValueError: Expected 2D array, got scalar array instead:
-array=nan.
-Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
-[2022-02-10 20:50:16,674 : ERROR : preprocessPredVals] - Expected 2D array, got scalar array instead:
-array=nan.
-Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
-Traceback (most recent call last):
-  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 24, in preprocessPredvalues
-    data_scaled = self.standeredScalePredValues(data_transformed)
-  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 52, in standeredScalePredValues
-    raise e
-  File "C:\Users\vishnu_nadh\Desktop\DS\MLDL\fck_prediction\Data_Preprocessing\preprocessPredVals.py", line 46, in standeredScalePredValues
-    print(scaler.transform(data))
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\preprocessing\_data.py", line 886, in transform
-    force_all_finite='allow-nan')
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\base.py", line 421, in _validate_data
-    X = check_array(X, **check_params)
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
-    return f(*args, **kwargs)
-  File "C:\Users\vishnu_nadh\anaconda3\envs\fck\lib\site-packages\sklearn\utils\validation.py", line 691, in check_array
-    "if it contains a single sample.".format(array))
-ValueError: Expected 2D array, got scalar array instead:
-array=nan.
-Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
-[2022-02-10 20:53:42,614 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-10 20:53:42,620 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-10 20:53:42,620 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-10 21:11:45,083 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-10 21:11:45,089 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-10 21:11:45,089 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-10 21:11:51,205 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-10 21:11:51,211 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-10 21:11:51,211 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-10 21:11:57,743 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-10 21:11:57,746 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-10 21:11:57,747 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-10 21:12:03,559 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-10 21:12:03,562 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-10 21:12:03,562 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-10 21:12:09,446 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-10 21:12:09,451 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-10 21:12:09,451 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-10 21:12:19,453 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-10 21:12:19,458 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-10 21:12:19,459 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-10 21:36:29,137 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-10 21:36:29,145 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-10 21:36:29,145 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-10 21:36:57,202 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-10 21:36:57,208 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-10 21:36:57,209 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 10:12:48,273 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 10:12:48,280 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 10:12:48,282 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 10:12:56,096 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 10:12:56,102 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 10:12:56,102 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 10:13:02,298 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 10:13:02,305 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 10:13:02,305 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 10:13:08,785 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 10:13:08,790 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 10:13:08,790 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 10:30:34,475 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 10:30:34,481 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 10:30:34,481 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 10:30:50,326 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 10:30:50,331 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 10:30:50,331 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 11:58:49,733 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 11:58:49,750 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 11:58:49,750 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 11:59:04,298 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 11:59:04,303 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 11:59:04,304 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 11:59:10,254 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 11:59:10,258 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 11:59:10,259 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 11:59:19,808 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 11:59:19,813 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 11:59:19,813 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 11:59:27,664 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 11:59:27,668 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 11:59:27,669 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 11:59:34,765 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 11:59:34,768 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 11:59:34,769 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 11:59:41,309 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 11:59:41,313 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 11:59:41,313 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 11:59:49,184 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 11:59:49,190 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 11:59:49,191 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 16:51:13,179 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 16:51:13,183 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 16:51:13,183 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 19:57:44,424 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 19:57:44,429 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 19:57:44,429 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 19:57:56,630 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 19:57:56,636 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 19:57:56,636 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 19:58:04,615 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 19:58:04,618 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 19:58:04,618 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 20:45:31,787 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 20:45:31,796 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 20:45:31,796 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 20:47:27,986 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 20:47:28,002 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 20:47:28,002 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 20:47:35,884 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 20:47:35,890 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 20:47:35,890 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 21:16:11,916 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 21:16:11,922 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 21:16:11,923 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-11 21:16:19,874 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-11 21:16:19,885 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-11 21:16:19,886 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
-[2022-02-12 12:57:07,575 : INFO : preprocessPredVals] - input prediction values are logtransformed
-[2022-02-12 12:57:07,594 : INFO : preprocessPredVals] - prediction data values scaled
-[2022-02-12 12:57:07,595 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-12 18:02:00,296 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-12 18:02:00,303 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-12 18:02:00,303 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-12 18:02:09,578 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-12 18:02:09,580 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-12 18:02:09,581 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-12 18:02:19,102 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-12 18:02:19,105 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-12 18:02:19,105 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-12 18:02:28,284 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-12 18:02:28,289 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-12 18:02:28,290 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-12 18:02:34,110 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-12 18:02:34,118 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-12 18:02:34,118 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-12 18:05:20,973 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-12 18:05:20,977 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-12 18:05:20,978 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-12 18:06:26,219 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-12 18:06:26,223 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-12 18:06:26,223 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-12 18:06:35,905 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-12 18:06:35,912 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-12 18:06:35,912 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-12 18:06:42,307 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-12 18:06:42,310 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-12 18:06:42,310 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-12 18:06:50,809 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-12 18:06:50,813 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-12 18:06:50,813 : INFO : preprocessPredVals] - prediction input values data preprocessing completed
+[2022-02-12 18:06:55,979 : INFO : preprocessPredVals] - input prediction values are logtransformed
+[2022-02-12 18:06:55,983 : INFO : preprocessPredVals] - prediction data values scaled
+[2022-02-12 18:06:55,984 : INFO : preprocessPredVals] - prediction input values data preprocessing completed

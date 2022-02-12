@@ -1,6 +1,7 @@
 import os
 import shutil
 import json
+from matplotlib import container
 import pandas as pd
 import logging
 from datetime import datetime
@@ -101,14 +102,16 @@ class RawData_Validation:
         time = now.strftime("%H%M%S")
 
         try:
+
             src = "training_Data_Validated/BadData/"
             if os.path.isdir(src):
-                path = "Tranining_ArchivedBadData"
+                path = "Training_ArchivedBadData"
                 if not os.path.isdir(path):
                     os.makedirs(path)
                 filepath = (
                     "Training_ArchivedBadData/Bad_data_" + str(date) + "_" + str(time)
                 )
+
                 if not os.path.isdir(filepath):
                     os.makedirs(filepath)
                 files = os.listdir(src)
@@ -120,6 +123,19 @@ class RawData_Validation:
                 if os.path.isdir(path + "BadData/"):
                     shutil.rmtree(path + "BadData/")
                 logger.info("bad data folder deleted succussfully")
+
+            # the code to remove the datas from archived data folder assuming that
+            # every data stored there is being redirected to client side within a perticular
+            # piriod. This is to avoid unnesessary aggragation of datas in that folder which
+            # would take up space in heroku container
+
+            files = os.listdir("Training_ArchivedBadData/")
+            if len(files) > 3:
+                old_files = files[0 : (len(files) - 3)]
+                for file in old_files:
+                    old_path = os.path.join("Training_ArchivedBadData", file)
+                    shutil.rmtree(old_path)
+                logger.info("Excessive files from Training_ArchivedBadData removed")
 
         except Exception as e:
             logger.exception(f"error while moving bad files to archive bad folder: {e}")

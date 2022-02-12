@@ -1,61 +1,7 @@
-[2022-02-10 14:05:49,442 : INFO : preprocessTraindata] - found null values in 0 columns
-[2022-02-10 14:05:49,458 : INFO : preprocessTraindata] - imputed all missing value in the data
-[2022-02-10 14:05:49,461 : INFO : preprocessTraindata] - data saparated to features and labels
-[2022-02-10 14:05:50,048 : INFO : preprocessTraindata] - applied logarithamic transformation to the data
-[2022-02-10 14:05:50,065 : INFO : preprocessTraindata] - Std_Scaler scaler saved in directory
-[2022-02-10 14:05:50,076 : INFO : preprocessTraindata] - training data is scaled using standered scaler
-[2022-02-10 14:05:50,082 : INFO : preprocessTraindata] - data splitted to train and test data sets
-[2022-02-10 21:11:45,253 : INFO : PredictOutput] - predicted the compressive strength as 12.660175323486328
-[2022-02-10 21:11:51,236 : INFO : PredictOutput] - predicted the compressive strength as 12.660175323486328
-[2022-02-10 21:11:57,773 : INFO : PredictOutput] - predicted the compressive strength as 12.660175323486328
-[2022-02-10 21:12:03,585 : INFO : PredictOutput] - predicted the compressive strength as 2.7902777194976807
-[2022-02-10 21:12:09,474 : INFO : PredictOutput] - predicted the compressive strength as 35.120140075683594
-[2022-02-10 21:12:19,479 : INFO : PredictOutput] - predicted the compressive strength as 35.120140075683594
-[2022-02-10 21:36:29,169 : INFO : PredictOutput] - predicted the compressive strength as 78.25615692138672
-[2022-02-10 21:36:57,236 : INFO : PredictOutput] - predicted the compressive strength as 64.68873596191406
-[2022-02-11 19:56:19,722 : INFO : preprocessData] - found null values in 0 columns
-[2022-02-11 19:56:19,733 : INFO : preprocessData] - imputed all missing value in the data
-[2022-02-11 19:56:19,740 : INFO : preprocessData] - data saparated to features and labels
-[2022-02-11 19:56:20,000 : INFO : preprocessData] - applied logarithamic transformation to the data
-[2022-02-11 19:56:20,011 : INFO : preprocessData] - Std_Scaler scaler saved in directory
-[2022-02-11 19:56:20,023 : INFO : preprocessData] - training data is scaled using standered scaler
-[2022-02-11 19:56:20,033 : INFO : preprocessData] - data splitted to train and test data sets
-[2022-02-12 12:57:15,060 : INFO : preprocessData] - found null values in 0 columns
-[2022-02-12 12:57:15,072 : INFO : preprocessData] - imputed all missing value in the data
-[2022-02-12 12:57:15,074 : INFO : preprocessData] - data saparated to features and labels
-[2022-02-12 12:57:15,307 : INFO : preprocessData] - applied logarithamic transformation to the data
-[2022-02-12 12:57:15,321 : INFO : preprocessData] - Std_Scaler scaler saved in directory
-[2022-02-12 12:57:15,326 : INFO : preprocessData] - training data is scaled using standered scaler
-[2022-02-12 12:57:15,328 : INFO : preprocessData] - data splitted to train and test data sets
-[2022-02-12 12:57:42,601 : INFO : preprocessData] - found null values in 2 columns
-[2022-02-12 12:57:42,613 : INFO : preprocessData] - imputed all missing value in the data
-[2022-02-12 12:57:42,867 : INFO : preprocessData] - applied logarithamic transformation to the data
-[2022-02-12 12:57:42,871 : INFO : preprocessData] - data scaled using saved scaler model
-[2022-02-12 14:35:57,020 : INFO : preprocessData] - found null values in 0 columns
-[2022-02-12 14:35:57,033 : INFO : preprocessData] - imputed all missing value in the data
-[2022-02-12 14:35:57,035 : INFO : preprocessData] - data saparated to features and labels
-[2022-02-12 14:35:57,505 : INFO : preprocessData] - applied logarithamic transformation to the data
-[2022-02-12 14:35:57,531 : INFO : preprocessData] - Std_Scaler scaler saved in directory
-[2022-02-12 14:35:57,543 : INFO : preprocessData] - training data is scaled using standered scaler
-[2022-02-12 14:35:57,547 : INFO : preprocessData] - data splitted to train and test data sets
-[2022-02-12 16:18:23,900 : INFO : preprocessData] - found null values in 0 columns
-[2022-02-12 16:18:23,912 : INFO : preprocessData] - imputed all missing value in the data
-[2022-02-12 16:18:23,914 : INFO : preprocessData] - data saparated to features and labels
-[2022-02-12 16:18:24,200 : INFO : preprocessData] - applied logarithamic transformation to the data
-[2022-02-12 16:18:24,217 : INFO : preprocessData] - Std_Scaler scaler saved in directory
-[2022-02-12 16:18:24,226 : INFO : preprocessData] - training data is scaled using standered scaler
-[2022-02-12 16:18:24,228 : INFO : preprocessData] - data splitted to train and test data sets
-[2022-02-12 16:19:52,474 : INFO : preprocessData] - found null values in 0 columns
-[2022-02-12 16:19:52,479 : INFO : preprocessData] - imputed all missing value in the data
-[2022-02-12 16:19:52,483 : INFO : preprocessData] - data saparated to features and labels
-[2022-02-12 16:19:52,761 : INFO : preprocessData] - applied logarithamic transformation to the data
-[2022-02-12 16:19:52,777 : INFO : preprocessData] - Std_Scaler scaler saved in directory
-[2022-02-12 16:19:52,789 : INFO : preprocessData] - training data is scaled using standered scaler
-[2022-02-12 16:19:52,791 : INFO : preprocessData] - data splitted to train and test data sets
-[2022-02-12 16:41:43,860 : INFO : preprocessData] - found null values in 0 columns
-[2022-02-12 16:41:43,871 : INFO : preprocessData] - imputed all missing value in the data
-[2022-02-12 16:41:43,874 : INFO : preprocessData] - data saparated to features and labels
-[2022-02-12 16:41:44,258 : INFO : preprocessData] - applied logarithamic transformation to the data
-[2022-02-12 16:41:44,270 : INFO : preprocessData] - Std_Scaler scaler saved in directory
-[2022-02-12 16:41:44,277 : INFO : preprocessData] - training data is scaled using standered scaler
-[2022-02-12 16:41:44,278 : INFO : preprocessData] - data splitted to train and test data sets
+[2022-02-12 18:00:45,670 : INFO : preprocessData] - found null values in 0 columns
+[2022-02-12 18:00:45,683 : INFO : preprocessData] - imputed all missing value in the data
+[2022-02-12 18:00:45,685 : INFO : preprocessData] - data saparated to features and labels
+[2022-02-12 18:00:45,995 : INFO : preprocessData] - applied logarithamic transformation to the data
+[2022-02-12 18:00:46,010 : INFO : preprocessData] - Std_Scaler scaler saved in directory
+[2022-02-12 18:00:46,015 : INFO : preprocessData] - training data is scaled using standered scaler
+[2022-02-12 18:00:46,018 : INFO : preprocessData] - data splitted to train and test data sets
