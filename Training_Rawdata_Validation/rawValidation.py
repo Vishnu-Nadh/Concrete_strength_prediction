@@ -80,10 +80,10 @@ class RawData_Validation:
         """this function create good and bad data directory for saving validated input data"""
         try:
             logger.info("starting to create good and bad data directory..")
-            path = os.path.join("training_data_validated/", "GoodData/")
+            path = os.path.join("training_Data_Validated/", "GoodData/")
             if not os.path.isdir(path):
                 os.makedirs(path)
-            path = os.path.join("training_data_validated/", "BadData/")
+            path = os.path.join("training_Data_Validated/", "BadData/")
             if not os.path.isdir(path):
                 os.makedirs(path)
             logger.info("Created good new and bad data directory!")
@@ -145,7 +145,7 @@ class RawData_Validation:
                         "training_Data_Validated/GoodData/",
                     )
                     logger.debug(
-                        f"file {csv} succeeded column number validation. file copied to bad good data folder"
+                        f"file {csv} succeeded column number validation. file copied to good data folder"
                     )
                 else:
                     shutil.copy(

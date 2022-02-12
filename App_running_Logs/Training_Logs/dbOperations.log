@@ -52,3 +52,12 @@
 [2022-02-12 16:19:52,419 : INFO : dbOperations] - Concrete_Data.csv added to database table
 [2022-02-12 16:19:52,445 : INFO : dbOperations] - opened database Training succussfully
 [2022-02-12 16:19:52,460 : INFO : dbOperations] - Data base table exported to csv succussfully
+[2022-02-12 16:41:43,726 : INFO : dbOperations] - entered to create tabledb method
+[2022-02-12 16:41:43,728 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-12 16:41:43,729 : INFO : dbOperations] - Table created succussfully and database closed
+[2022-02-12 16:41:43,730 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-12 16:41:43,745 : INFO : dbOperations] - deleted all data from table before adding new data
+[2022-02-12 16:41:43,749 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-12 16:41:43,783 : INFO : dbOperations] - Concrete_Data.csv added to database table
+[2022-02-12 16:41:43,824 : INFO : dbOperations] - opened database Training succussfully
+[2022-02-12 16:41:43,842 : INFO : dbOperations] - Data base table exported to csv succussfully
