@@ -22,3 +22,27 @@
 [2022-02-12 12:57:14,964 : INFO : trainingValidationInsertion] - Deleted good data folder
 [2022-02-12 12:57:14,996 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
 [2022-02-12 12:57:15,025 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-12 14:35:56,668 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-12 14:35:56,860 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-12 14:35:56,865 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-12 14:35:56,878 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-12 14:35:56,920 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-12 14:35:56,922 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-12 14:35:56,966 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-12 14:35:56,998 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-12 16:18:23,643 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-12 16:18:23,792 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-12 16:18:23,796 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-12 16:18:23,809 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-12 16:18:23,839 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-12 16:18:23,841 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-12 16:18:23,867 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-12 16:18:23,884 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-12 16:19:52,244 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-12 16:19:52,378 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-12 16:19:52,385 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-12 16:19:52,392 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-12 16:19:52,420 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-12 16:19:52,421 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-12 16:19:52,443 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-12 16:19:52,460 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully

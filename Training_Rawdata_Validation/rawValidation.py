@@ -142,7 +142,7 @@ class RawData_Validation:
                 if data.shape[1] == numberOfColumns:
                     shutil.copy(
                         os.path.join(self.Batch_Directory, csv),
-                        "training_Data_Validated/GoodData",
+                        "training_Data_Validated/GoodData/",
                     )
                     logger.debug(
                         f"file {csv} succeeded column number validation. file copied to bad good data folder"
@@ -150,7 +150,7 @@ class RawData_Validation:
                 else:
                     shutil.copy(
                         os.path.join(self.Batch_Directory, csv),
-                        "training_Data_Validated/BadData",
+                        "training_Data_Validated/BadData/",
                     )
                     logger.debug(
                         f"file {csv} failed column number validation. file copied to bad data folder"

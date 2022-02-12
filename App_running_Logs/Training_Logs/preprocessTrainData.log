@@ -31,3 +31,24 @@
 [2022-02-12 12:57:42,613 : INFO : preprocessData] - imputed all missing value in the data
 [2022-02-12 12:57:42,867 : INFO : preprocessData] - applied logarithamic transformation to the data
 [2022-02-12 12:57:42,871 : INFO : preprocessData] - data scaled using saved scaler model
+[2022-02-12 14:35:57,020 : INFO : preprocessData] - found null values in 0 columns
+[2022-02-12 14:35:57,033 : INFO : preprocessData] - imputed all missing value in the data
+[2022-02-12 14:35:57,035 : INFO : preprocessData] - data saparated to features and labels
+[2022-02-12 14:35:57,505 : INFO : preprocessData] - applied logarithamic transformation to the data
+[2022-02-12 14:35:57,531 : INFO : preprocessData] - Std_Scaler scaler saved in directory
+[2022-02-12 14:35:57,543 : INFO : preprocessData] - training data is scaled using standered scaler
+[2022-02-12 14:35:57,547 : INFO : preprocessData] - data splitted to train and test data sets
+[2022-02-12 16:18:23,900 : INFO : preprocessData] - found null values in 0 columns
+[2022-02-12 16:18:23,912 : INFO : preprocessData] - imputed all missing value in the data
+[2022-02-12 16:18:23,914 : INFO : preprocessData] - data saparated to features and labels
+[2022-02-12 16:18:24,200 : INFO : preprocessData] - applied logarithamic transformation to the data
+[2022-02-12 16:18:24,217 : INFO : preprocessData] - Std_Scaler scaler saved in directory
+[2022-02-12 16:18:24,226 : INFO : preprocessData] - training data is scaled using standered scaler
+[2022-02-12 16:18:24,228 : INFO : preprocessData] - data splitted to train and test data sets
+[2022-02-12 16:19:52,474 : INFO : preprocessData] - found null values in 0 columns
+[2022-02-12 16:19:52,479 : INFO : preprocessData] - imputed all missing value in the data
+[2022-02-12 16:19:52,483 : INFO : preprocessData] - data saparated to features and labels
+[2022-02-12 16:19:52,761 : INFO : preprocessData] - applied logarithamic transformation to the data
+[2022-02-12 16:19:52,777 : INFO : preprocessData] - Std_Scaler scaler saved in directory
+[2022-02-12 16:19:52,789 : INFO : preprocessData] - training data is scaled using standered scaler
+[2022-02-12 16:19:52,791 : INFO : preprocessData] - data splitted to train and test data sets

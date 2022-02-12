@@ -7,3 +7,12 @@
 [2022-02-12 12:57:15,318 : INFO : fileOperations] - scaler Std_Scaler saved to scaler directory
 [2022-02-12 12:57:16,926 : INFO : fileOperations] - model XGB_Model saved to model directory
 [2022-02-12 12:57:16,954 : INFO : fileOperations] - loaded model from saved pickle format
+[2022-02-12 14:35:57,530 : INFO : fileOperations] - scaler Std_Scaler saved to scaler directory
+[2022-02-12 14:35:59,728 : INFO : fileOperations] - model XGB_Model saved to model directory
+[2022-02-12 14:35:59,748 : INFO : fileOperations] - loaded model from saved pickle format
+[2022-02-12 16:18:24,216 : INFO : fileOperations] - scaler Std_Scaler saved to scaler directory
+[2022-02-12 16:18:26,074 : INFO : fileOperations] - model XGB_Model saved to model directory
+[2022-02-12 16:18:26,106 : INFO : fileOperations] - loaded model from saved pickle format
+[2022-02-12 16:19:52,777 : INFO : fileOperations] - scaler Std_Scaler saved to scaler directory
+[2022-02-12 16:19:54,358 : INFO : fileOperations] - model XGB_Model saved to model directory
+[2022-02-12 16:19:54,391 : INFO : fileOperations] - loaded model from saved pickle format
