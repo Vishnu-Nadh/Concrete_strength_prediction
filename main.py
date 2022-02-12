@@ -91,8 +91,6 @@ def predictFromCSV():
             )
             dic = csvValidation.predictionCSVvalidation()
 
-            print(dic)
-
             if dic["status"] == "error":
                 return jsonify(dic)
             else:
@@ -113,12 +111,12 @@ def download_result():
     return send_file(path, "predictions.csv", as_attachment=True)
 
 
-# port = int(os.getenv("PORT", 5000))
-# if __name__ == "__main__":
-#     host = "0.0.0.0"
-#     httpd = simple_server.make_server(host, port, app)
-#     print(f"Serving on {host}:5000")
-#     httpd.serve_forever()
-
+port = int(os.getenv("PORT", 5000))
 if __name__ == "__main__":
-    app.run(debug=True)
+    host = "0.0.0.0"
+    httpd = simple_server.make_server(host, port, app)
+    print(f"Serving on {host}:5000")
+    httpd.serve_forever()
+
+# if __name__ == "__main__":
+#     app.run(debug=True)

@@ -31,3 +31,8 @@
 [2022-02-11 21:30:09,543 : INFO : PredictOutput] - all null values are imputed
 [2022-02-11 21:30:10,011 : INFO : PredictOutput] - applied logtransformation on data
 [2022-02-11 21:30:10,016 : INFO : PredictOutput] - applied standered scaling on data
+[2022-02-12 12:57:07,680 : INFO : PredictOutput] - predicted the compressive strength as 3.582710027694702
+[2022-02-12 12:57:42,601 : INFO : PredictOutput] - null column details identified
+[2022-02-12 12:57:42,613 : INFO : PredictOutput] - all null values are imputed
+[2022-02-12 12:57:42,867 : INFO : PredictOutput] - applied logtransformation on data
+[2022-02-12 12:57:42,871 : INFO : PredictOutput] - applied standered scaling on data

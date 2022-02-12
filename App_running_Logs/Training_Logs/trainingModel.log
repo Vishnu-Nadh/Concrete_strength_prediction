@@ -10,3 +10,9 @@
 [2022-02-11 19:56:20,024 : INFO : trainingModel] - standered scaling of data completed
 [2022-02-11 19:56:21,548 : INFO : trainingModel] - model training completed
 [2022-02-11 19:56:21,667 : INFO : trainingModel] - model training completed with training_score 0.9833078295824782 and test_score 0.9226994143292099
+[2022-02-12 12:57:15,073 : INFO : trainingModel] - imputed all missing values in data
+[2022-02-12 12:57:15,074 : INFO : trainingModel] - data features and labels saperated
+[2022-02-12 12:57:15,307 : INFO : trainingModel] - logarithemic transformation completed
+[2022-02-12 12:57:15,326 : INFO : trainingModel] - standered scaling of data completed
+[2022-02-12 12:57:16,901 : INFO : trainingModel] - model training completed
+[2022-02-12 12:57:17,060 : INFO : trainingModel] - model training completed with training_score 0.9833078295824782 and test_score 0.9226994143292099

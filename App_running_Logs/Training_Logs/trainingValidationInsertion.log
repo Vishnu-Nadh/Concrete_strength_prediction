@@ -14,3 +14,11 @@
 [2022-02-11 19:56:19,619 : INFO : trainingValidationInsertion] - Deleted good data folder
 [2022-02-11 19:56:19,663 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
 [2022-02-11 19:56:19,691 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
+[2022-02-12 12:57:14,706 : INFO : trainingValidationInsertion] - training data validation started...!
+[2022-02-12 12:57:14,906 : INFO : trainingValidationInsertion] - Training data validation completed!
+[2022-02-12 12:57:14,911 : INFO : trainingValidationInsertion] - Table creation completed
+[2022-02-12 12:57:14,925 : INFO : trainingValidationInsertion] - Deleted table content from db before adding new data
+[2022-02-12 12:57:14,962 : INFO : trainingValidationInsertion] - csv data inserted into database table
+[2022-02-12 12:57:14,964 : INFO : trainingValidationInsertion] - Deleted good data folder
+[2022-02-12 12:57:14,996 : INFO : trainingValidationInsertion] - bad data files moved to archived folder
+[2022-02-12 12:57:15,025 : INFO : trainingValidationInsertion] - databse data exported to csv succussfully
